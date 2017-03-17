@@ -106,7 +106,7 @@ function create_taxonomies($key,$value) {
 function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
-                        "catering" => array("season" ));
+                        "catering" => array("season","fly" ));
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
