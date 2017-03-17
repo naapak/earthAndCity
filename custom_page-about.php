@@ -1,7 +1,6 @@
 <?php
 
-/*This template is: page-about.php*/
-
+/*This template is: Our Story*/
 
 
 ?>
