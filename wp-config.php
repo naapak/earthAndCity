@@ -26,7 +26,7 @@ define('DB_NAME', 'earthandcity');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'earthandcity');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
