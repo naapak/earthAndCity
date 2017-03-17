@@ -31,3 +31,44 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+function get_post_args($category) {
+
+    $labels = array(
+        'name'               => _x( $category, 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( $category, 'post type singular name', 'your-plugin-textdomain' ),
+        'menu_name'          => _x( $category, 'admin menu', 'your-plugin-textdomain' ),
+        'name_admin_bar'     => _x( $category, ' add new on admin bar', 'your-plugin-textdomain' ),
+        'add_new'            => _x( 'Add New ', $category, 'your-plugin-textdomain' ),
+        'add_new_item'       => __( 'Add New '. $category, 'your-plugin-textdomain' ),
+        'new_item'           => __( 'New ' . $category, 'your-plugin-textdomain' ),
+        'edit_item'          => __( 'Edit ' . $category, 'your-plugin-textdomain' ),
+        'view_item'          => __( 'View ' . $category, 'your-plugin-textdomain' ),
+        'all_items'          => __( 'All '.$category, 'your-plugin-textdomain' ),
+        'search_items'       => __( "Search $category", 'your-plugin-textdomain' ),
+        'parent_item_colon'  => __( "Parent $category".":", 'your-plugin-textdomain' ),
+        'not_found'          => __( 'No '.$category.' found.', 'your-plugin-textdomain' ),
+        'not_found_in_trash' => __( 'No '.$category.' found in Trash.', 'your-plugin-textdomain' )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+               'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        // 'rewrite'            => array( 'slug' => $category ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
+    );
+
+    return $args;
+}
+
+
+
