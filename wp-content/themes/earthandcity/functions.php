@@ -27,6 +27,11 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
+
+
+
+
+
 function my_acf_google_map_api( $api ){
   
   $api['key'] = 'AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw';
@@ -42,3 +47,9 @@ function my_acf_google_map_api( $api ){
 //     return get_bloginfo( 'stylesheet_directory' ) . '/assets/images/pin.png';
 // }
 // add_filter( 'bgmp_default-icon', 'setBGMPDefaultIcon' );
+
+
+
+
+
+
