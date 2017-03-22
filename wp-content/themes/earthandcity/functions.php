@@ -26,3 +26,30 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+
+
+
+
+function my_acf_google_map_api( $api ){
+  
+  $api['key'] = 'AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw';
+  
+  return $api;
+  
+}
+
+// add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+// function setBGMPDefaultIcon( $iconURL )
+// {
+//     return get_bloginfo( 'stylesheet_directory' ) . '/assets/images/pin.png';
+// }
+// add_filter( 'bgmp_default-icon', 'setBGMPDefaultIcon' );
+
+
+
+
+
+
