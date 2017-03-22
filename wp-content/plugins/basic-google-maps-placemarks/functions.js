@@ -62,6 +62,7 @@ function bgmp_wrapper( $ ) {
 		 * @author Ian Dunn <ian@iandunn.name>
 		 */
 		buildMap : function() {
+			$.bgmp.getDataFromInput( );
 			var mapOptions;
 
 			if ( bgmpData.options.mapWidth == '' || bgmpData.options.mapHeight == '' || bgmpData.options.latitude == '' || bgmpData.options.longitude == '' || bgmpData.options.zoom == '' || bgmpData.options.infoWindowMaxWidth == '' ) {
@@ -237,6 +238,7 @@ function bgmp_wrapper( $ ) {
 
 				google.maps.event.addListener( marker, 'click', function() {
 					$.bgmp.openInfoWindow( map, marker, infoWindowContent );
+					
 				} );
 
 				return true;
@@ -247,6 +249,22 @@ function bgmp_wrapper( $ ) {
 				}
 			}
 		},
+
+		getDataFromInput: function() {
+			console.log("i am in the get data function");
+			var searchButton = document.getElementById('btn');
+			searchButton.addEventListener('click', function() {
+			var address = document.getElementById('addressInput').value;
+			console.log(address);
+
+			//
+
+		});
+		},
+
+
+
+
 
 		/**
 		 * Opens an info window on the map
@@ -277,6 +295,13 @@ function bgmp_wrapper( $ ) {
 			var id = $( this ).data( 'marker-id' );
 			$.bgmp.openInfoWindow( $.bgmp.map, $.bgmp.markers[ id ], $.bgmp.infoWindowContent[ id ] );
 		}
+
+
+
+
+
+
+
 	}; // end bgmp
 
 	// Kick things off...
