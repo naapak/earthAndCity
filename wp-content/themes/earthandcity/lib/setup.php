@@ -105,6 +105,8 @@ function assets() {
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
+// enques google maps and API key is added here:-
+
 wp_enqueue_script('gmapapi/js', 'http://maps.google.com/maps/api/js?libraries=places&key=AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw', ['jquery'], null, true);
 wp_enqueue_script('gmaps/js', Assets\asset_path('../gmaps/gmaps.min.js'), ['jquery'], null, true);
 wp_enqueue_script('gmapsfunctions/js', Assets\asset_path('../gmaps/gmapsfunctions.js'), ['jquery'], null, true);

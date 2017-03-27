@@ -22,16 +22,16 @@ Header
     <div id="page" class="hfeed site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-      <header id="masthead" class="site-header" role="banner">
+     <header id="masthead" class="site-header" role="banner">
         <div class="site-branding flex"></div>
         
 
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">"h3ehkjr"</span>
 
-        <div>
-        <!-- <button type="button" class="btn btn-default" aria-label="Left Align"> -->
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        <!-- </button> -->
+        <div> -->
+        <button type="button" class="btn btn-default" aria-label="Left Align"> 
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
         </div>
 
         <!-- Logo image that only loads when not mobile -->
@@ -43,3 +43,6 @@ Header
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
         </nav>
       </header>
+
+
+      
