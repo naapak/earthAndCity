@@ -22,24 +22,14 @@ Header
     <div id="page" class="hfeed site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-<<<<<<< HEAD
-     <header id="masthead" class="site-header" role="banner">
-        <div class="site-branding flex"></div>
-        
-=======
+
       <header id="masthead" class="site-header" role="banner">
         <div class="site-branding">
->>>>>>> origin/master
+
 
           <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">"h3ehkjr"</span>
 
-<<<<<<< HEAD
-        <div> -->
-        <button type="button" class="btn btn-default" aria-label="Left Align"> 
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </button>
-        </div>
-=======
+
           <a href="#" class="socialMediaIcons"><i class="fa fa-facebook-square">&#160;&#160;</i></a>
                       <a href="#" class="socialMediaIcons"><i class="fa fa-twitter-square">&#160;&#160;</i></a>
                       <a href="#" class="socialMediaIcons"><i class="fa fa-google-plus-square"></i></a>
@@ -47,7 +37,6 @@ Header
           <div>
             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
           </div>
->>>>>>> origin/master
 
           <span class="glyphicon glyphicon-user"></span>
           
