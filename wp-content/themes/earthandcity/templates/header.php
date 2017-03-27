@@ -45,7 +45,8 @@ Header
             <div class="hidden-sm-down logoIcon">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logoIcon" alt="Earth + City Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg"></a>
             </div> 
-            get post info
+           <!--  get post info - for banner image
+            get thumbnail - for logo, social media links -->
             
             <nav id="site-navigation" class=" navbar-collapse main-navigation" role="navigation">
               <?php
