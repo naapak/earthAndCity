@@ -22,24 +22,39 @@ Header
     <div id="page" class="hfeed site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
+
       <header id="masthead" class="site-header" role="banner">
-        <div class="site-branding flex"></div>
-        
+        <div class="site-branding">
 
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">"h3ehkjr"</span>
 
-        <div>
-        <!-- <button type="button" class="btn btn-default" aria-label="Left Align"> -->
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        <!-- </button> -->
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">"h3ehkjr"</span>
+
+
+          <a href="#" class="socialMediaIcons"><i class="fa fa-facebook-square">&#160;&#160;</i></a>
+                      <a href="#" class="socialMediaIcons"><i class="fa fa-twitter-square">&#160;&#160;</i></a>
+                      <a href="#" class="socialMediaIcons"><i class="fa fa-google-plus-square"></i></a>
+
+          <div>
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </div>
+
+          <span class="glyphicon glyphicon-user"></span>
+          
+          <div class="flex">
+            <!-- Logo image that only loads when not mobile -->
+            <div class="hidden-sm-down logoIcon">
+              <img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg" alt="Earth + City Logo">
+            </div> 
+            
+            
+              <nav id="site-navigation" class="main-navigation hidden-sm-down" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+              </nav>
+          </div>
+          
         </div>
 
-        <!-- Logo image that only loads when not mobile -->
-        <div class="hidden-sm-down">
-          <img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg" alt="Earth + City Logo">
-        </div> 
-
-        <nav id="site-navigation" class="main-navigation flex" role="navigation">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-        </nav>
       </header>
+
+
+      

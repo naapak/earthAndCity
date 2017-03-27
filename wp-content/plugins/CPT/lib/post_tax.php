@@ -95,7 +95,8 @@ function create_taxonomies($key,$value) {
         'show_admin_column'     => true,
         'update_count_callback' => '_update_post_term_count',
         'query_var'             => true,
-        'rewrite'               => array( 'slug' => $key ),
+        'rewrite'               => array( 'slug' => $key,'with_front' => false ),
+        
     );
 
     register_taxonomy( $key, $value, $args );
@@ -107,7 +108,7 @@ function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
                         "catering" => array("season", ),
-                        "locations"=> array("categories",));
+                        "locations"=> array("venue",));
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {

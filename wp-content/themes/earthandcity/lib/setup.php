@@ -85,6 +85,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_archive('catering'),
     is_page_template('template-custom.php'),
   ]);
 
@@ -104,6 +105,8 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+// enques google maps and API key is added here:-
 
 wp_enqueue_script('gmapapi/js', 'http://maps.google.com/maps/api/js?libraries=places&key=AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw', ['jquery'], null, true);
 wp_enqueue_script('gmaps/js', Assets\asset_path('../gmaps/gmaps.min.js'), ['jquery'], null, true);
