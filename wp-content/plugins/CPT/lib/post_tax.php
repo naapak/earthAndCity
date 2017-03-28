@@ -32,7 +32,6 @@ function get_post_args($category) {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        // 'rewrite'            => array( 'slug' => $category ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -46,7 +45,7 @@ function get_post_args($category) {
 
 function create_post_types(){
 
-    $post_types = array("Ourimpact", "Catering","Locations");
+    $post_types = array("Ourimpact", "Catering", "FAQ", "Locations");
 
     foreach($post_types as $post_type) {
         $post_args = get_post_args($post_type);
@@ -96,6 +95,7 @@ function create_taxonomies($key,$value) {
         'update_count_callback' => '_update_post_term_count',
         'query_var'             => true,
         'rewrite'               => array( 'slug' => $key,'with_front' => false ),
+
         
     );
 
@@ -108,6 +108,7 @@ function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
                         "catering" => array("season", ),
+                        "FAQ" => array("faq",),
                         "locations"=> array("venue",));
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
@@ -134,11 +135,20 @@ function theme_slug_widgets_init() {
 }
 
 
+add_action( 'pre_get_posts', 'modify_query_order_posts' );
+ 
+function modify_query_order_posts( $query ) {
+ 
 
-
+    if( is_tax('venue') && $query->is_main_query() ) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+ 
+    }
+ 
+}
 
 
 }
-
 
 ?>

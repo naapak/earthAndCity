@@ -1,33 +1,56 @@
+// Global
+.flex { display: flex;}
+.textCenter {text-align: center !important;}
 .bold{font-weight: bold;}
+.redcolor {color: rgb(87, 156, 191);}
+.margin {margin-right:5% !important; margin-left:5% !important;}
+.marginRight {margin-right:5% !important;}
+.marginLeft {margin-left:5% !important;}
+.marginBottom {margin-bottom: 5vh !important;}
+
+// specific
+/* ACF maps */
 .acf-map {
-	width: 100%;
-	height: 400px;
-	border: #ccc solid 1px;
-	margin: 20px 0;
+    width: 100%;
+    height: 400px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
 }
-.textCenter {text-align: center;}
-/* fixes potential theme css conflict */
+.row {margin-right: 0px!important; }
+
 .acf-map img {
    max-width: inherit !important; }
-.redcolor {color: rgb(87, 156, 191);}
 
-.flex { display: flex;}
-// #googleMaps {min-width:500px; min-height:500px;}
-.AddressScroll {  width: 200px;
-    height: 500px;
-    border-right: 1px solid rgb(87, 156, 191);
-    overflow-y: scroll; margin-bottom:10px;}
+
+/* findus Pages */
+
+#googleMaps {min-width:10vw!important; min-height: 40vh!important;}
+.AddressScroll { 
+    max-height: 40vh;
+    overflow-y: scroll; margin-bottom:10px;
+    }
 
 .AddressScroll .markerdata p {margin-bottom: 0px;}
 .AddressScroll .markerdata {margin-bottom: 15px;}
 .markerTitle {margin-bottom: 0px;}
-.btn {background-color: rgb(87, 156, 191);     
+.btn {background-color: black;     
 	padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: -5.5px;
     border-radius: 0;
     color: white; }
 #geocoding_form {margin-bottom:4%;}
-#addressInput { max-width:50%; border: 1px solid rgb(87, 156, 191); padding-top: 2px;
-    padding-bottom: 4px;}
+#addressInput { min-width:40%; 
+    border: 1px solid black;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+.GoogleMargin{margin-right:5% !important;}
+
+@media (max-width: 600px) {
+#googleMaps { max-height: 30vh!important;}
+
+    }

@@ -1,13 +1,18 @@
-.catering-image {
-	height: 60vh;
-	background-repeat: no-repeat;
-	background-size: 110%;
-	background-position: bottom;
+.catering-accordion {
+	max-width: 80%;
+	margin: 0 auto;
 }
 
-.content-area {
-    width: 90%;
-    margin: 0 auto;
+.catering-image {
+	height: 40vh;
+	// background: linear-gradient(rgba(0,0,0,.3) 100%, transparent);
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: center;
+}
+
+.catering-title {
+	text-align: center;
 }
 
 .white-text {

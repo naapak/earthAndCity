@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <?php
 /*
 Header
  */
+=======
+>>>>>>> naapak/master
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -33,7 +36,11 @@ Header
         <div>
           <div class="navbar-header">
             <!-- button to collapse and display mobile-only menu -->
+<<<<<<< HEAD
             <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
+=======
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".displayMobileMenu">
+>>>>>>> naapak/master
               <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -90,6 +97,10 @@ Header
         </div>
 
       </header>
+<<<<<<< HEAD
 
     </div>
+=======
+>>>>>>> naapak/master
 
+    </div>
