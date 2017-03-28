@@ -1,4 +1,4 @@
-<h1>This is header.php</h1>
+<!-- <h1>This is header.php</h1> -->
 <?php
 /*
 Header
@@ -35,9 +35,9 @@ Header
         </div>
 
         <!-- Logo image that only loads when not mobile -->
-        <div class="hidden-sm-down">
+       <!--  <div class="hidden-sm-down">
           <img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg" alt="Earth + City Logo">
-        </div> 
+        </div>  -->
 
         <nav id="site-navigation" class="main-navigation flex" role="navigation">
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

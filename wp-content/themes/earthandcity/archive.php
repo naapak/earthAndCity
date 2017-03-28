@@ -1,23 +1,40 @@
 <h1>this is archive.php</h1>
-<?php  ?>
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+<?php //global $smof_data; echo "<pre>";print_r($smof_data);?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'templates/content', get_post_type()); ?>
+<div class="wrap">
+	
+	<div class="panel-group catering-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+		<?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		
+  	<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading-<?php the_ID(); ?>">
+      <h4 class="panel-title">
+      
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse-<?php the_ID(); ?>">
+        <?php get_template_part( 'templates/content', get_post_type()); ?>
+        </a>
+      </h4>
+    </div>
 
-			<?php endwhile; ?>
+    <div id="collapse-<?php the_ID(); ?>" class="panel-collapse collapse<?php echo ($the_query->current_post == 0 ? ' in' : ''); ?>" role="tabpanel" aria-labelledby="heading-<?php the_ID(); ?>">
+      <div class="panel-body">
+        <?php echo get_the_content() ?>
+      </div>
+    </div>
+  </div>
 
-			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+<?php endwhile; else: ?>
 
-			<?php get_template_part( 'templates/content', 'none' ); ?>
+    <!-- <p>Please fill out some questions.</p> -->
 
-		<?php endif; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?> 
+</div><!--end of the accordion wrap-->
 
-		</main><!-- #main -->
-</div><!-- #primary -->
+
+</div><!--wrapper-->
+
+<?php get_footer(); ?> 

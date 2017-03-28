@@ -46,7 +46,7 @@ function get_post_args($category) {
 
 function create_post_types(){
 
-    $post_types = array("Ourimpact", "Catering","Locations");
+    $post_types = array("Ourimpact", "Catering", "FAQ", "Locations");
 
     foreach($post_types as $post_type) {
         $post_args = get_post_args($post_type);
@@ -107,7 +107,9 @@ function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
                         "catering" => array("season", ),
+                        "FAQ" => array("faq",),
                         "locations"=> array("categories",));
+
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
@@ -131,13 +133,6 @@ function theme_slug_widgets_init() {
     'after_title'   => '</h2>',
     ) );
 }
-
-
-
-
-
-
 }
-
 
 ?>
