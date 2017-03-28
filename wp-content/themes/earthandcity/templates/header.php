@@ -1,4 +1,3 @@
-<h1>This is header.php</h1>
 <?php
 /*
 Header
@@ -18,12 +17,20 @@ Header
   </head>
 
     <body <?php body_class(); ?>>
-    <div id="page" class="hfeed site">
+    <!-- <div id="page" class="hfeed site"> -->
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
+
+      <div class="flexAlignRight hidden-sm-down">
+        <a class="iconMargin" href="https://www.facebook.com/earthandcity/"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/facebook-logo-button.svg" alt="Facebook Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://www.instagram.com/earthandcity/?hl=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/instagram.svg" alt="Instagram Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://twitter.com/earthandcity?lang=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/twitter-logo-button.svg" alt="Twitter Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="mailto:info@earthandcity.ca"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/email.svg" alt="Email Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/youtube-symbol.svg" alt="Youtube Link" width="42" height="42" border="0"></a>
+      </div>
 
       <header class="banner navbar navbar-default navbar-static-top" role="banner">
 
-        <div class="container">
+        <div>
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
@@ -33,14 +40,10 @@ Header
             </button>
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
           </div>
-
-          <a href="https://www.facebook.com/earthandcity/"><img src="/assets/images/Icons/facebook-logo-button.svg" alt="Facebook Link" width="42" height="42" border="0"></a>
-          <a href="https://www.instagram.com/earthandcity/?hl=en"><img src="/assets/images/Icons/instagram.svg" alt="Instagram Link" width="42" height="42" border="0"></a>
-          <a href="https://twitter.com/earthandcity?lang=en"><img src="/assets/images/Icons/twitter-logo-button.svg" alt="Twitter Link" width="42" height="42" border="0"></a>
-          <a href="mailto:info@earthandcity.ca"><img src="/assets/images/Icons/email.svg" alt="Email Link" width="42" height="42" border="0"></a>
-          <a href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="/assets/images/Icons/youtube-symbol.svg" alt="Youtube Link" width="42" height="42" border="0"></a>
           
-          <div class="flex">
+
+          
+          <div class="flexAlignCenter">
             <!-- Logo image that only loads when not mobile -->
             <div class="hidden-sm-down logoIcon">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logoIcon" alt="Earth + City Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg"></a>
@@ -48,24 +51,28 @@ Header
            <!--  get post info - for banner image
             get thumbnail - for logo, social media links -->
             
-            <nav id="site-navigation" class=" navbar-collapse main-navigation" role="navigation">
-              <?php
-              wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'navbar-collapse',
-                'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker()
-                ));
-              ?>
-            </nav>
+            <!-- navbar for desktop -->
+            
+              <nav id="desktop-navigation" class="navbar-collapse main-navigation hidden-sm-down desktop-nav" role="navigation">
+                <?php
+                wp_nav_menu( array(
+                  'menu'              => 'primary',
+                  'theme_location'    => 'primary',
+                  'depth'             => 2,
+                  'container'         => 'div',
+                  'container_class'   => 'navbar-collapse',
+                  'container_id'      => 'bs-example-navbar-collapse-1',
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'            => new WP_Bootstrap_Navwalker()
+                  ));
+                ?>
+              </nav>
+            
           </div>
 
-          <nav id="site-navigation" class=" navbar-collapse main-navigation hidden-sm-down" role="navigation">
+          <!-- navbar for mobile -->
+          <nav id="mobile-navigation" class=" navbar-collapse main-navigation" role="navigation">
               <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
@@ -80,16 +87,9 @@ Header
                 ));
               ?>
             </nav>
+        </div>
+
       </header>
 
-              <!-- <div id="dropDownOverride" class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Impact</a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Zero Waste</a>
-                  <a class="dropdown-item" href="#">Local Food Procurement</a>
-                  <a class="dropdown-item" href="#">Systems Thinking</a>
-                </div>
-              </div> -->
-
-    </div>
+            
+    <!-- </div> -->
