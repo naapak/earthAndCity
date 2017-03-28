@@ -99,16 +99,18 @@ for (i=0; i<markersvenue.length; i++) {
 	$('#geocoding_form').submit(function(e){
 		if ($("#addressInput").val() == '' ) { return  false } else {
 		// console.log($("#addressInput").val());
+		
         e.preventDefault();
 		GMaps.geocode({
 	  	address: $('#addressInput').val(),
+
 	  	callback: function(results, status) {
 	    if (status == 'OK') {
 	      var latlng = results[0].geometry.location;
 	      maps.setCenter(latlng.lat(), latlng.lng());
+	      maps.setZoom(14);
       		$("#addressInput").val("") ;
       		$("#addressInput").val("") ;
-
     	}
   		}
 
