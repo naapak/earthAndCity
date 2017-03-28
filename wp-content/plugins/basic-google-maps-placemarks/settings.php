@@ -149,11 +149,11 @@ if ( ! class_exists( 'BGMPSettings' ) ) {
 		/**
 		 * Creates the markup for the Re-Abolish Slavery Ribbon meta box
 		 *
-		 * @author Ian Dunn <ian@iandunn.name>
-		 */
-		public function markupRASRMetaBox() {
-			require_once( dirname( __FILE__ ) . '/views/meta-re-abolish-slavery.php' );
-		}
+		//  * @author Ian Dunn <ian@iandunn.name>
+		//  */
+		// public function markupRASRMetaBox() {
+		// 	require_once( dirname( __FILE__ ) . '/views/meta-re-abolish-slavery.php' );
+		// }
 
 		/**
 		 * Adds a 'Settings' link to the Plugins page

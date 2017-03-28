@@ -46,7 +46,7 @@ function get_post_args($category) {
 
 function create_post_types(){
 
-    $post_types = array("Ourimpact", "Catering");
+    $post_types = array("Ourimpact", "Catering","Locations");
 
     foreach($post_types as $post_type) {
         $post_args = get_post_args($post_type);
@@ -95,7 +95,8 @@ function create_taxonomies($key,$value) {
         'show_admin_column'     => true,
         'update_count_callback' => '_update_post_term_count',
         'query_var'             => true,
-        'rewrite'               => array( 'slug' => $key ),
+        'rewrite'               => array( 'slug' => $key,'with_front' => false ),
+        
     );
 
     register_taxonomy( $key, $value, $args );
@@ -106,7 +107,8 @@ function create_taxonomies($key,$value) {
 function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
-                        "catering" => array("season","fly" ));
+                        "catering" => array("season", ),
+                        "locations"=> array("venue",));
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
