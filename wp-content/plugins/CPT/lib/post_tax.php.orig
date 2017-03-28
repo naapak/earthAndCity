@@ -108,7 +108,13 @@ function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
                         "catering" => array("season", ),
+<<<<<<< HEAD
+                        "FAQ" => array("faq",),
                         "locations"=> array("categories",));
+
+=======
+                        "locations"=> array("venue",));
+>>>>>>> naapak/master
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
