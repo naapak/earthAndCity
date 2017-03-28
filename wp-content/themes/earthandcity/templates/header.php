@@ -21,6 +21,7 @@ Header
     <div id="page" class="hfeed site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
+
       <header class="banner navbar navbar-default navbar-static-top" role="banner">
 
         <div class="container">
@@ -32,6 +33,21 @@ Header
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+
+      <header id="masthead" class="site-header" role="banner">
+        <div class="site-branding">
+
+
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">"h3ehkjr"</span>
+
+
+          <a href="#" class="socialMediaIcons"><i class="fa fa-facebook-square">&#160;&#160;</i></a>
+                      <a href="#" class="socialMediaIcons"><i class="fa fa-twitter-square">&#160;&#160;</i></a>
+                      <a href="#" class="socialMediaIcons"><i class="fa fa-google-plus-square"></i></a>
+
+          <div>
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
           </div>
 
           <a href="https://www.facebook.com/earthandcity/"><img src="/assets/images/Icons/facebook-logo-button.svg" alt="Facebook Link" width="42" height="42" border="0"></a>
@@ -93,3 +109,4 @@ Header
               </div> -->
 
     </div>
+
