@@ -1,8 +1,4 @@
-
 <h1>this is archive.php</h1>
-
-<?php //global $smof_data; echo "<pre>";print_r($smof_data);?>
-
 
 <div class="wrap">
 	
@@ -35,5 +31,7 @@
 <?php wp_reset_postdata(); ?> 
 </div><!--end of the accordion wrap-->
 
-		</main><!-- #main -->
-</div><!-- #primary -->
+
+</div><!--wrapper-->
+
+<?php get_footer(); ?> 

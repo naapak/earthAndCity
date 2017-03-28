@@ -1,6 +1,6 @@
 <?php if (is_archive() ) { ?>
 
-	<?php global $smof_data; echo "<pre>";print_r($smof_data);"</pre>"?>
+	<?php //global $smof_data; echo "<pre>";print_r($smof_data);"</pre>"?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
