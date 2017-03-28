@@ -32,7 +32,6 @@ function get_post_args($category) {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        // 'rewrite'            => array( 'slug' => $category ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -109,7 +108,8 @@ function create_tax() {
 
     $tax_array  = array("ourimpact" => array("impact",),
                         "catering" => array("season", ),
-                        "locations"=> array("categories",));
+                        "FAQ" => array("faq",),
+                        "locations"=> array("venue",));
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
@@ -139,7 +139,7 @@ add_action( 'pre_get_posts', 'modify_query_order_posts' );
  
 function modify_query_order_posts( $query ) {
  
-    // Check if on frontend and main query is modified
+
     if( is_tax('venue') && $query->is_main_query() ) {
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
