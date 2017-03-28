@@ -8,7 +8,7 @@
               // print_r($terms);
 
              ?> 
-			 <div class="flex textCenter productsType caps teal-navi">
+			 <div class="flex textCenter margin">
  		 		<?foreach ($terms as $term) : ?>
 
  		 		 <?php 
@@ -19,7 +19,7 @@
 
  <?php if ( have_posts() ) : ?>
 
-			<header class="page-header textCenter">
+			<header class="page-header textCenter margin">
 				<?php
 					$taxonomies = $wp_query->get_queried_object();
 					// echo $tax->name;
@@ -28,27 +28,27 @@
 					<h1 class="caps"><?php echo $taxonomies->name?></h1>
  		 			<p><?php echo $taxonomies->description?></p>
 
- 		 	<div class="inputValue">
- 		 	<form method="post" id="geocoding_form" class="form-inline textCenter" >
-		          <div class="input form-group">
+ 		 	
+ 		 	<form method="post" id="geocoding_form" class="textCenter" >
+		          <div class="col-sm-12 textCenter ">
 		            <input type="text" id="addressInput" name="address" placeholder="Address or Postal Code">
-		            <input type="submit" class="btn" id="geocoding_form_btn" value="Search">
+		            <input type="submit" class="btn " id="geocoding_form_btn" value="Search">
 		          </div>
         	</form>
-        	</div>
+        	
             
-	</div class="container">
+	</div class="container  ">
  		 			
 			</header><!-- .page-header -->
 			<?php endif; ?>		
 
 
-            <div class="row">
-            <div class="col-md-6">
+            <div class="row marginBottom">
+            <div class="col-md-5 AddressScroll marginLeft">
             <?php   $markers_array = array(); ?>
   				<?php while ( have_posts() ) : the_post(); ?>
  					
- 				<article id="post-<?php the_ID(); ?>" class=" "  <?php post_class(); ?>>
+ 				<article id="post-<?php the_ID(); ?>" class=""  <?php post_class(); ?>>
 					<header class="markerdata">
 					<?php if(get_field("website_address") == null) { ?> 
 						<p class="bold"><?php echo the_title()?></p>
@@ -78,7 +78,7 @@
 				<?php endwhile; ?>
 			</div>
 
-			<div id="googleMaps" style="width:500px; height:500px;" class="col-md-6">
+			<div id="googleMaps"  class="col-md-5 GoogleMargin ">
 				
 				<?php
 								$translation_array = array(
