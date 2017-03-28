@@ -26,13 +26,14 @@
 
 #googleMaps {min-width:10vw!important; min-height: 40vh!important;}
 .AddressScroll { 
-    min-height: 2vh;
-    overflow-y: scroll; margin-bottom:10px;}
+    max-height: 40vh;
+    overflow-y: scroll; margin-bottom:10px;
+    }
 
 .AddressScroll .markerdata p {margin-bottom: 0px;}
 .AddressScroll .markerdata {margin-bottom: 15px;}
 .markerTitle {margin-bottom: 0px;}
-.btn {background-color: rgb(87, 156, 191);     
+.btn {background-color: black;     
 	padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
@@ -42,7 +43,7 @@
     color: white; }
 #geocoding_form {margin-bottom:4%;}
 #addressInput { min-width:40%; 
-    border: 1px solid rgb(87, 156, 191);
+    border: 1px solid black;
     padding-top: 2px;
     padding-bottom: 4px;
 }

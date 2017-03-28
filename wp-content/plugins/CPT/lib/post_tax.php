@@ -96,6 +96,7 @@ function create_taxonomies($key,$value) {
         'update_count_callback' => '_update_post_term_count',
         'query_var'             => true,
         'rewrite'               => array( 'slug' => $key,'with_front' => false ),
+
         
     );
 
@@ -133,6 +134,18 @@ function theme_slug_widgets_init() {
     ) );
 }
 
+add_action( 'pre_get_posts', 'modify_query_order_posts' );
+ 
+function modify_query_order_posts( $query ) {
+ 
+    // Check if on frontend and main query is modified
+    if( is_tax('venue') && $query->is_main_query() ) {
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+ 
+    }
+ 
+}
 
 
 

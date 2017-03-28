@@ -1,4 +1,4 @@
-
+// API and functions is at setup.php
 
 (function($) {
 
@@ -89,7 +89,11 @@ for (i=0; i<markersvenue.length; i++) {
 		title: markersvenue[i].title,
 		infoWindow: {
           content: "<h5 class='markerTitle'>"+markersvenue[i].title+"</h5><p>"+markersvenue[i].content+"</p>"+'<a href="https://www.google.com/maps/place/'+markersvenue[i].address+'">Get Directions</a>'
-        },		
+        },
+        click: function(e) {
+       	// maps.setCenter(latlng.lat(), latlng.lng());
+    	maps.setZoom(14);
+  		}		
 	});
 } // for markervalue.length
 
