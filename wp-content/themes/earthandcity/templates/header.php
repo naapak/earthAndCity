@@ -20,40 +20,40 @@ Header
     <!-- <div id="page" class="hfeed site"> -->
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-<div class="flexAlignRight hidden-sm-down">
-        <a class="iconMargin" href="https://www.facebook.com/earthandcity/"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/facebook-logo-button.svg" alt="Facebook Link" width="42" height="42" border="0"></a>
-        <a class="iconMargin" href="https://www.instagram.com/earthandcity/?hl=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/instagram.svg" alt="Instagram Link" width="42" height="42" border="0"></a>
-        <a class="iconMargin" href="https://twitter.com/earthandcity?lang=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/twitter-logo-button.svg" alt="Twitter Link" width="42" height="42" border="0"></a>
-        <a class="iconMargin" href="mailto:info@earthandcity.ca"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/email.svg" alt="Email Link" width="42" height="42" border="0"></a>
-        <a class="iconMargin" href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Icons/youtube-symbol.svg" alt="Youtube Link" width="42" height="42" border="0"></a>
-      </div>      <header class="banner navbar navbar-default navbar-static-top" role="banner">
+      <div class="flexAlignRight hidden-sm-down">
+        <a class="iconMargin" href="https://www.facebook.com/earthandcity/"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/facebook-logo-button.png" alt="Facebook Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://www.instagram.com/earthandcity/?hl=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/instagram.png" alt="Instagram Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://twitter.com/earthandcity?lang=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/twitter-logo-button.png" alt="Twitter Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="mailto:info@earthandcity.ca"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/email.png" alt="Email Link" width="42" height="42" border="0"></a>
+        <a class="iconMargin" href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/youtube-symbol.png" alt="Youtube Link" width="42" height="42" border="0"></a>
+      </div>      
+
+      <header class="banner navbar navbar-default navbar-static-top" role="banner">
 
         <div>
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <!-- button to collapse and display mobile-only menu -->
+            <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
               <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-
-
           </div>
-          
-
-          
+              
           <div class="flexAlignCenter">
             <!-- Logo image that only loads when not mobile -->
             <div class="hidden-sm-down logoIcon">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logoIcon" alt="Earth + City Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/Logo/logocircle.svg"></a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logoIcon" alt="Earth + City Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/logocircle.png"></a>
             </div> 
+
+          
            <!--  get post info - for banner image
             get thumbnail - for logo, social media links -->
             
             <!-- navbar for desktop -->
-            
-              <nav id="desktop-navigation" class="navbar-collapse main-navigation hidden-sm-down desktop-nav" role="navigation">
+              <nav id="desktop-navigation" class="main-navigation hidden-sm-down desktop-nav whiteText" role="navigation">
                 <?php
                 wp_nav_menu( array(
                   'menu'              => 'primary',
@@ -72,7 +72,7 @@ Header
           </div>
 
           <!-- navbar for mobile -->
-          <nav id="mobile-navigation" class=" navbar-collapse main-navigation" role="navigation">
+          <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse whiteText" role="navigation">
               <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
@@ -91,6 +91,5 @@ Header
 
       </header>
 
-
-
     </div>
+

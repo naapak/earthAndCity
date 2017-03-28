@@ -2,6 +2,7 @@
 	display:flex;
 	justify-content:space-between;
 	align-content:center;
+	align-items: center;
 }
 
 .flexAlignRight{
@@ -18,7 +19,7 @@
 	width:8em;
 	height:8em;
 }
-
+// navbar 
 #desktop-navigation {
 	display:flex;
 	justify-content:flex-end;
@@ -30,18 +31,21 @@
 	}
 }
 
-.dud{
-	display:flex;
+.nav.navbar-nav {
+	display: flex;
+	flex-direction: row;
+	color:white;
+}
+
+.main-navigation ul li a{
+	color:white;
+}
+
+.menuIcon{
 	
 }
 
-// .desktop-nav {
-// 	display: flex;
-// 	justify-content: space-around;
-// 	width: 80%;
-// }
 
-/* desktop responsive */
 @media only screen and (min-width: 601px){
 
 }
