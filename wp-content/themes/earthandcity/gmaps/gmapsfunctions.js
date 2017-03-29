@@ -74,7 +74,7 @@ if ($("#googleMaps").length == 1) {
   div: '#googleMaps',
   lat: venue.Mainlatittude,
   lng: venue.Mainlongitude,
-  zoom: 12,
+  zoom: parseInt(venue.Mainzoom),
 });
 
 
