@@ -35,9 +35,11 @@ $terms = get_terms($tax, array('hide_empty' => false,));
     <header class="page-header textCenter">
         <?php
         $taxonomies = $wp_query->get_queried_object();
+
         ?>
     </header><!-- .page-header -->
 <?php endif; ?>
+
 
 <!--
 =====================
@@ -68,7 +70,7 @@ $terms = get_terms($tax, array('hide_empty' => false,));
                 <div class="panel-collapse collapse<?php echo($the_query->current_post ==0 ? '':'');?>"
                      id="collapse-<?php the_ID();?>">
                     <div class="panel-body flex-div-content">
-
+                        
                             <div class="side-image">
                                     <img src="<?php echo (get_field('image_1')['url']);?>">
                             </div>
