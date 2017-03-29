@@ -11,11 +11,22 @@
 }
 
 
+/***** MailChimp plugin styling *****/
 
-// .mc_header_address{
-// 	display:none;
-// }
+#mc_display_rewards{
+	display:none;
+}
 
-// .mc_email_format{
-// 	display:none;
-// }
+.mergeRow{
+	display:none;
+}
+
+.mc_merge_var{
+	display:none;
+}
+
+/***** MailChimp plugin styling *****/
+
+#menu-footer{
+	list-style:none;
+}

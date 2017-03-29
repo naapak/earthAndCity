@@ -131,6 +131,8 @@ $of_options[] = array( 	"name" 		=> "Content",
 						"type" 		=> "textarea"
 				);
 
+//-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
+
 
 					
 $of_options[] = array( 	"name" 		=> "Background Images",

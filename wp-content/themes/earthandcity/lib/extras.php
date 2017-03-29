@@ -70,5 +70,16 @@ function get_post_args($category) {
     return $args;
 }
 
-
+// function footer_widget_init() {
+//     register_sidebar( array(
+//         'name'          => esc_html( 'footerMenu' ),
+//         'id'            => 'footerMenu',
+//         'description'   => '',
+//         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+//         'after_widget'  => '</aside>',
+//         'before_title'  => '<h2 class="widget-title">',
+//         'after_title'   => '</h2>',
+//     ) );
+// }
+// add_action( 'wp_register_footer_widget', 'footer_widget_init' );
 

@@ -41,7 +41,8 @@ function my_acf_google_map_api( $api ){
 
 
 
-// Register Custom Navigation Walker
+/****** Register Custom Navigation Walker ******/
+
 require_once('wp-bootstrap-navwalker.php');
 
 register_nav_menus( 
@@ -56,8 +57,8 @@ register_nav_menus(
     )
   );
 
-
-
-
+register_nav_menus( array(  
+  'Footer' => __('Footer', 'THEMENAME')  
+) );
 
 
