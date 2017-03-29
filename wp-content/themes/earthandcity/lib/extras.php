@@ -62,7 +62,7 @@ function get_post_args($category) {
         // 'rewrite'            => array( 'slug' => $category ),
         'capability_type'    => 'post',
         'has_archive'        => true,
-        'hierarchical'       => false,
+        'hierarchical'       => true,
         'menu_position'      => null,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
     );
@@ -70,5 +70,4 @@ function get_post_args($category) {
     return $args;
 }
 
-
-
+?>
