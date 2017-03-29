@@ -1,5 +1,4 @@
 .flexAlignCenter{
-<<<<<<< HEAD
 	display:flex;
 	justify-content:space-between;
 	align-content:center;
@@ -14,28 +13,29 @@
 .iconMargin{
 	margin-top:0.5em;
 	margin-right:1em;
-=======
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
-    align-items: center;
+    // display:flex;
+    // justify-content:space-between;
+    // align-content:center;
+    // align-items: center;
 }
+
 .flexAlignRight{
     display:flex;
     justify-content:flex-end;
 }
+
 .iconMargin{
     margin-top:0.5em;
     margin-right:1em;
->>>>>>> naapak/master
 }
+
 .logoIcon{
-<<<<<<< HEAD
 	width:8em;
 	height:8em;
 }
+
 // navbar 
-#desktop-navigation {
+#desktop-navigation{
 	display:flex;
 	justify-content:flex-end;
 	list-style:none;
@@ -61,34 +61,6 @@
 }
 
 
-=======
-    width:8em;
-    height:8em;
-}
-// navbar 
-#desktop-navigation {
-    display:flex;
-    justify-content:flex-end;
-    list-style:none;
-    li a{
-        // padding: 0 2rem 0 0;
-        margin: 0rem 4rem 0rem 0rem;
-    }
-}
-.nav.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    color:white;
-}
-.main-navigation ul li a{
-    color:white;
-}
-// .desktop-nav {
-//  display: flex;
-//  justify-content: space-around;
-//  width: 80%;
-// }
-/* desktop responsive */
->>>>>>> naapak/master
 @media only screen and (min-width: 601px){
+
 }
