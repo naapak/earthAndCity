@@ -12,9 +12,18 @@
 }
 
 .catering-subtitle {
+	// display: none;
 	text-align: center;
 	color: #4F4B4B;
 	padding: 1.5em;
+}
+
+.contact-button {
+	background-color: #3A3737;
+	color: white;
+	margin: 1em auto;
+	padding: 1em;
+	border: none;
 }
 
 .catering-text {
@@ -45,10 +54,10 @@
 	text-align: center;
 	position: relative;
 	top: 45%;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 2px 2px #4f4b4b;
 }
 
-:hover {
+.accordion-box .menu-title:hover {
 	text-decoration: none;
 }
 
@@ -57,16 +66,25 @@
 	margin: 0 auto;
 }
 
+.arrow-down {
+	height: 5%;
+	width: 5%;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
 
 /***************TABLET****************************/
 
-@media (min-width: 600px) {
+// @media (min-width: 600px) {
 
-}
+// }
 
 /***************DESKTOP****************************/
 
-@media (min-width: 1050px) {
+@media (min-width: 700px) {
 	.catering-info {
 		width: 50%;
 	}

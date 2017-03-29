@@ -11,7 +11,7 @@
     <div class="panel-heading" role="tab" id="heading-<?php the_ID(); ?>">
       <!-- <h4 class="panel-title"> -->
       
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse-<?php the_ID(); ?>">
+        <a class="accordion-box" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse-<?php the_ID(); ?>">
         <?php get_template_part( 'templates/content', get_post_type()); ?>
         </a>
       <!-- </h4> -->
