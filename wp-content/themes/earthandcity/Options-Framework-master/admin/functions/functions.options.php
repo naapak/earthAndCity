@@ -103,7 +103,7 @@ if (!function_exists('of_options'))
 global $of_options;
 $of_options = array();
 
-$of_options[] = array( 	"name" 		=> "Catering Settings",
+$of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
 					
@@ -115,8 +115,15 @@ $of_options[] = array( 	"name" 		=> "Catering Settings",
 // 						"icon" 		=> true,
 // 						"type" 		=> "info"
 // 				);
+// $of_options[] = array( 	"name" 		=> "Catering Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_links",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
 
-$of_options[] = array( 	"name" 		=> "Title",
+$of_options[] = array( 	"name" 		=> "Catering Page Title",
 						"desc" 		=> "Enter a title",
 						"id" 		=> "archive_catering_title",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
@@ -124,28 +131,35 @@ $of_options[] = array( 	"name" 		=> "Title",
 						"type" 		=> "text"
 				);
 
-$of_options[] = array( 	"name" 		=> "Content",
+$of_options[] = array( 	"name" 		=> "Catering Page Content",
 						"desc" 		=> "Enter some content.",
 						"id" 		=> "example_textarea",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);
 
-
-					
-$of_options[] = array( 	"name" 		=> "Background Images",
-						"desc" 		=> "Select a background pattern.",
-						"id" 		=> "custom_bg",
-						"std" 		=> $bg_images_url."bg0.png",
-						"type" 		=> "tiles",
-						"options" 	=> $bg_images,
+$of_options[] = array( 	"name" 		=> "Catering Page Sub Title",
+						"desc" 		=> "Enter a sub title",
+						"id" 		=> "archive_catering_subtitle",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
 				);
-					
-$of_options[] = array( 	"name" 		=> "Typography",
-						"desc" 		=> "Typography option with each property can be called individually.",
-						"id" 		=> "custom_type",
-						"std" 		=> array('size' => '12px','style' => 'bold italic'),
-						"type" 		=> "typography"
+
+// $of_options[] = array( 	"name" 		=> "FAQ Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_title",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+
+$of_options[] = array( 	"name" 		=> "FAQ Page Title",
+						"desc" 		=> "Enter a title",
+						"id" 		=> "archive_faq_title",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
 				);
 
 $of_options[] = array( 	"name" 		=> "General Settings",
