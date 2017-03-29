@@ -1,3 +1,7 @@
+<?php
+/*
+Header
+ */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -29,7 +33,9 @@
         <div>
           <div class="navbar-header">
             <!-- button to collapse and display mobile-only menu -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".displayMobileMenu">
+
+            <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
+
               <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -49,7 +55,8 @@
             get thumbnail - for logo, social media links -->
             
             <!-- navbar for desktop -->
-              <nav id="desktop-navigation" class="main-navigation hidden-sm-down desktop-nav whiteText" role="navigation">
+              <nav id="desktop-navigation" class="main-navigation hidden-sm-down desktop-nav" role="navigation">
+
                 <?php
                 wp_nav_menu( array(
                   'menu'              => 'primary',
@@ -68,7 +75,9 @@
           </div>
 
           <!-- navbar for mobile -->
-          <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse whiteText" role="navigation">
+
+          <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse" role="navigation">
+
               <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
@@ -86,5 +95,8 @@
         </div>
 
       </header>
+
+    </div>
+
 
     </div>
