@@ -59,7 +59,8 @@ Header
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
         </nav>
       </header>
-
+      </div>
+      </header>
               <!-- <div id="dropDownOverride" class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Impact</a>
 
