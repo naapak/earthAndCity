@@ -146,6 +146,15 @@ $of_options[] = array( 	"name" 		=> "Catering Page Sub Title",
 						"type" 		=> "text"
 				);
 
+$of_options[] = array( 	"name" 		=> "Catering Page Button",
+						"desc" 		=> "Enter a sub title",
+						"id" 		=> "archive_catering_button",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
+				);
+
+
 // $of_options[] = array( 	"name" 		=> "FAQ Page Links",
 // 						"desc" 		=> "Enter a title",
 // 						"id" 		=> "archive_catering_title",
@@ -161,6 +170,8 @@ $of_options[] = array( 	"name" 		=> "FAQ Page Title",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);
+
+//---------------------- END OF ARCHIVE (CATERING/FAQ) SETTINGS ----------------------
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
