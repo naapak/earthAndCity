@@ -15,7 +15,8 @@ $sage_includes = [
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
+  'Options-Framework-master/functions.php' // Theme customizer
 ];
 
 foreach ($sage_includes as $file) {
@@ -27,6 +28,9 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
+
+
+
 function my_acf_google_map_api( $api ){
   
   $api['key'] = 'AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw';
@@ -35,7 +39,6 @@ function my_acf_google_map_api( $api ){
   
 }
 
-// add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 // function setBGMPDefaultIcon( $iconURL )
 // {
@@ -84,4 +87,22 @@ function posts_clauses_with_tax( $clauses, $wp_query ) {
     }
     return $clauses;
 }
+
+
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
+
+register_nav_menus( 
+  array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+    )
+  );
+
+register_nav_menus( 
+  array(
+    'mobile' => __( 'Mobile Menu', 'THEMENAME' ),
+    )
+  );
+
+
 
