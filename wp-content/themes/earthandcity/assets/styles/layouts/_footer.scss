@@ -36,17 +36,6 @@
 	}
 }
 
-
-// .sub-menu{
-
-// 	li a{
-// 		text-decoration:none !important;
-// 		&:hover {
-// 			text-decoration:none;
-// 		}
-// 	}
-// }
-
 .copyrightLine{
 	display:flex;
 	justify-content:flex-end;
@@ -54,11 +43,6 @@
 	white-space:nowrap;
 }
 
-// .content-info div section div ul li ul li a{
-// 	list-style:none;
-// 	text-decoration:none;
-// }
-// tried to remove styling on footer menu links
 
 
 /***** MailChimp plugin styling *****/
@@ -69,7 +53,7 @@
 }
 
 .mc_header_address{
-	display:none;
+	// display:none;
 }
 
 #mc_mv_EMAIL::placeholder {
@@ -79,7 +63,6 @@
 	background-color:black;
 	text:white;
 	border:1px solid white;
-	// input[value="text"] {color:white}; tried to change the initial input value color to white
 }
 
 #menu-footer{
@@ -105,13 +88,12 @@
 	color:white;
 }
 
+.signUpButton{
+	background:black;
+	color:white;
+	border:1px solid white;
+}
 
-// .mc_merge_var{
-	
-// 	.mc_var_label,.mc_header,.mc_header_email {
-// 		// display:none;
-// 	}
-// }
 
 
 /********** desktop styling **********/

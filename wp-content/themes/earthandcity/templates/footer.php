@@ -10,9 +10,9 @@
 				<form action="//earthandcity.us9.list-manage.com/subscribe/post?u=0d5ee7dafe74014c19b7248e3&amp;id=9df49b8429" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll">
 						<div class="mc-field-group">
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address...">
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email...">
 						</div>
-						<div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						<div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button signUpButton"></div>
 					<div class="mc-field-group input-group"></div>
 					<div id="mce-responses" class="clear">
 						<div class="response" id="mce-error-response" style="display:none"></div>
