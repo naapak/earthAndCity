@@ -40,6 +40,8 @@ $(document).ready(function(){
 
 
 
+
+
 $("#acf-field-latitude").prop('disabled', true);
 $("#acf-field-longitude").prop('disabled', true);
  var $input = $('<input type="button" value="Enter" class="button button-primary button-large goButton"/>');
@@ -74,7 +76,7 @@ if ($("#googleMaps").length == 1) {
   div: '#googleMaps',
   lat: venue.Mainlatittude,
   lng: venue.Mainlongitude,
-  zoom: 12,
+  zoom: parseInt(venue.Mainzoom),
 });
 
 
@@ -124,6 +126,38 @@ for (i=0; i<markersvenue.length; i++) {
  // } //if statement ends
 
 } //googleMaps.length 
+
 }); // ends document ready
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+(function($){
+        $(window).on("load",function(){
+        	console.log('i am here');
+            $(".customScroll").mCustomScrollbar({
+ 	axis:"y",
+      theme:"dark",
+        //   scrollButtons:{ enable: true },
+        //   live:"on",
+        //   advanced:{ updateOnContentResize: true,      updateOnSelectorChange:true },
+        //   documentTouchScroll: false
+        });
+        });
+
+
+
+    })(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+

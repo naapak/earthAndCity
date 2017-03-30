@@ -103,6 +103,7 @@ Header
             </nav>
         </div>
       </header>
+
     </div>
     <?php new banner; ?>
 
