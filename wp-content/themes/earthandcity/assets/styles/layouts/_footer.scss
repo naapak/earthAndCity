@@ -11,7 +11,7 @@
 	}
 }
 
-.flexAlignRight{
+.flexRight{
 	display:flex;
 	justify-content:flex-end;
 }
@@ -20,21 +20,22 @@
 
 	.menu {
 		list-style:none;
-		
-		li {
-			&:first-child {
-				text-decoration:underline;
-				}
-
-				a {
-					text-decoration:none;
-				}
-			}
-		}
+		padding:0;
 		a {
 			color:white;
+			text-decoration:underline;
+		}
+		.sub-menu {
+			list-style:none;
+			padding:0;
+			a {
+				text-decoration:none;
+			}
+		}
+		
 	}
 }
+
 
 // .sub-menu{
 
