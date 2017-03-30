@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?php 
+=======
 <?php
+>>>>>>> origin/master
 namespace Roots\Sage\Extras;
 use Roots\Sage\Setup;
 
@@ -64,6 +68,11 @@ function get_post_args($category) {
     );
 
     return $args;
+<<<<<<< HEAD
+}
+=======
 }
 
 
+
+>>>>>>> origin/master

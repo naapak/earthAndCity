@@ -1,0 +1,27 @@
+.banner-wrap {
+	
+	.banner-content {
+		padding: 5rem 0;
+		text-align:center;
+		h1 {
+			text-shadow: 0 0 8px #333;
+			font-size: 5rem;
+		}
+
+	}
+	.banner-buttons {
+		display: flex;
+    	justify-content: center;
+    	padding-bottom:3rem;
+    	
+    	.button {
+    		padding:1.5rem 2.5rem;
+    		margin:.7rem;
+    		font-size:1.6rem;
+    		background:#333;
+    		a {
+    			color:white;
+    		}
+    	}
+	}
+}

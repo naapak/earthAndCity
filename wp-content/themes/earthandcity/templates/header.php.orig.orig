@@ -103,7 +103,11 @@ Header
             </nav>
         </div>
       </header>
+<<<<<<< HEAD
+=======
 
+
+>>>>>>> naapak/master
     </div>
     <?php new banner; ?>
 
