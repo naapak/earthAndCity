@@ -10,10 +10,6 @@
 .iconMargin{
 	margin-top:0.5em;
 	margin-right:1em;
-    // display:flex;
-    // justify-content:space-between;
-    // align-content:center;
-    // align-items: center;
 }
 
 .flexAlignRight{
@@ -26,11 +22,14 @@
     margin-top:0.5em;
     margin-right:1em;
 }
-
 .logoIcon{
 	width:9em;
 	height:9em;
 	margin-left:3em;
+}
+
+.marginBottom{
+	margin-bottom:0.25em;
 }
 
 
@@ -42,39 +41,76 @@
 	list-style:none;
 
 	li a{
-		// padding: 0 2rem 0 0;
 		margin: 0rem 4rem 0rem 0rem;
 	}
+	
+	div ul li ul #menu-item-56{
+		border-bottom: 1px solid gainsboro;
+    	border-top: 1px solid gainsboro;	
+	}
+
+	div ul li ul #menu-item-49{
+		border-bottom: 1px solid gainsboro;
+    	border-top: 1px solid gainsboro;	
+	}
+
+	div ul li ul #menu-item-53{
+		border-bottom: 1px solid gainsboro;
+    	border-top: 1px solid gainsboro;	
+	}
+
+	div ul li ul #menu-item-52{
+		border-bottom: 1px solid gainsboro;	
+	}		
+
+	div ul li ul li a{
+		white-space:nowrap;
+		margin-left: 1em;
+	}
+
+	// div ul li ul li a:hover{
+	// 	underline: none;
+	// }
 }
 
 .nav.navbar-nav{
 	display: flex;
 	flex-direction: row;
 	color:white;
-
-	li ul li a{
-		
-	}
 }
 
 .main-navigation ul li a{
-	// color:white;
+	color:black;
 }
 
 .navbar-header{
 	display:none;
 }
 
+
+
+/********** mobile menu button specific styling **********/
+
 .menuIcon{
-	// background:url("../assets/images/IconsPNG/menu-button.png");
+	background:url("../../assets/images/IconsPNG/menu-button.png");
 	background-size:contain;
 	background-position:center;
 	height:3em;
 	width:3em;
 }
 
+// .navbar-toggle.collapsed.menuIcon.hidden-md-up{
+// 	margin:0 auto;
+// }
 
-@media only screen and (min-width: 601px){
+// body button {
+// 	margin:0 auto;
+// }
+// tried to align the menu button to the middle
+
+
+/********** desktop styling **********/
+
+@media only screen and (min-width: 768px){
 
 }
-

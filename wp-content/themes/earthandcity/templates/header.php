@@ -15,13 +15,13 @@ Header
 
   <?php wp_head(); ?>
   </head>
-
+    
+    <!-- declares smof to be available for use, logo is being dynamically loaded through smof -->
+    <?php global $smof_data; ?>
+    
     <body <?php body_class(); ?>>
     <!-- <div id="page" class="hfeed site"> -->
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
-      <!-- loads the banner image -->
-      <!-- <div class="bannerImage" style="background-image: url('<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>');"> -->
 
       <!-- button to collapse and display mobile-only menu -->
       <button type="button" class="navbar-toggle collapsed menuIcon hidden-md-up" data-toggle="collapse" data-target=".displayMobileMenu">
@@ -43,16 +43,29 @@ Header
       <header class="banner navbar navbar-default navbar-static-top" role="banner">
         <div>
           <div class="navbar-header">
+
+            <!-- button to collapse and display mobile-only menu -->
+
+            <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
+
+              <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
           </div>
               
           <div class="flexAlignLogoNav">
 
             <!-- Logo image that only loads when not mobile -->
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logoIcon hidden-sm-down" alt="Earth + City Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/logocircle.png"></a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+              <img class="logoIcon hidden-sm-down marginBottom" alt="Earth + City Logo" src="<?php echo $smof_data['logo']?>"></a>
             
             <!-- navbar for desktop -->
               <nav id="desktop-navigation" class="main-navigation hidden-sm-down desktop-nav" role="navigation">
+
                 <?php
                 wp_nav_menu( array(
                   'menu'              => 'primary',
@@ -71,7 +84,9 @@ Header
           </div>
 
           <!-- navbar for mobile -->
+
           <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse" role="navigation">
+
               <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
@@ -89,4 +104,6 @@ Header
         </div>
       </header>
     </div>
+    <?php new banner; ?>
 
+    </div>

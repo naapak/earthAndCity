@@ -107,14 +107,7 @@ $of_options[] = array( 	"name" 		=> "Catering Settings",
 						"type" 		=> "heading"
 				);
 					
-// $of_options[] = array( 	"name" 		=> "Hello there!",
-// 						"desc" 		=> "",
-// 						"id" 		=> "introduction",
-// 						"std" 		=> "<h3 style=\"margin: 0 0 10px;\">Welcome to the Options Framework demo.</h3>
-// 						This is a slightly modified version of the original options framework by Devin Price with a couple of aesthetical improvements on the interface and some cool additional features. If you want to learn how to setup these options or just need general help on using it feel free to visit my blog at <a href=\"http://aquagraphite.com/2011/09/29/slightly-modded-options-framework/\">AquaGraphite.com</a>",
-// 						"icon" 		=> true,
-// 						"type" 		=> "info"
-// 				);
+
 
 $of_options[] = array( 	"name" 		=> "Title",
 						"desc" 		=> "Enter a title",
@@ -134,39 +127,19 @@ $of_options[] = array( 	"name" 		=> "Content",
 //-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
 
 
-					
-$of_options[] = array( 	"name" 		=> "Background Images",
-						"desc" 		=> "Select a background pattern.",
-						"id" 		=> "custom_bg",
-						"std" 		=> $bg_images_url."bg0.png",
-						"type" 		=> "tiles",
-						"options" 	=> $bg_images,
-				);
-					
-$of_options[] = array( 	"name" 		=> "Typography",
-						"desc" 		=> "Typography option with each property can be called individually.",
-						"id" 		=> "custom_type",
-						"std" 		=> array('size' => '12px','style' => 'bold italic'),
-						"type" 		=> "typography"
-				);
+
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);
 					
-$url =  ADMIN_DIR . 'assets/images/';
-$of_options[] = array( 	"name" 		=> "Main Layout",
-						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
-						"id" 		=> "layout",
-						"std" 		=> "2c-l-fixed.css",
-						"type" 		=> "images",
-						"options" 	=> array(
-							'1col-fixed.css' 	=> $url . '1col.png',
-							'2c-r-fixed.css' 	=> $url . '2cr.png',
-							'2c-l-fixed.css' 	=> $url . '2cl.png',
-							'3c-fixed.css' 		=> $url . '3cm.png',
-							'3c-r-fixed.css' 	=> $url . '3cr.png'
-						)
+
+$of_options[] = array( 	"name" 		=> "Logo",
+						"desc" 		=> "Upload the logo for the site.",
+						"id" 		=> "logo",
+						"std" 		=> "",
+						"type" 		=> "upload",
+						
 				);
 				
 $of_options[] = array( 	"name" 		=> "Tracking Code",
