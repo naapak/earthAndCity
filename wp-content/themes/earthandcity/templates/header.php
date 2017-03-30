@@ -53,6 +53,7 @@ Header
             
             <!-- navbar for desktop -->
               <nav id="desktop-navigation" class="main-navigation hidden-sm-down desktop-nav" role="navigation">
+
                 <?php
                 wp_nav_menu( array(
                   'menu'              => 'primary',
@@ -71,7 +72,9 @@ Header
           </div>
 
           <!-- navbar for mobile -->
+
           <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse" role="navigation">
+
               <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
@@ -89,4 +92,3 @@ Header
         </div>
       </header>
     </div>
-
