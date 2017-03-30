@@ -103,12 +103,10 @@ Header
             </nav>
         </div>
       </header>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
     </div>
+<<<<<<< HEAD
     <?php new banner; ?>
 
     </div>
+=======
+>>>>>>> origin/master

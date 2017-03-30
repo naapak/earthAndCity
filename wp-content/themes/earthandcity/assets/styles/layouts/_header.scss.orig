@@ -1,42 +1,6 @@
-<<<<<<< HEAD
 /********** general header styling **********/
 
 .flexAlignLogoNav{
-=======
-
-// .flex{
-// 	display:flex
-// 	flex-direction:
-// }
-
-// .logoIcon{
-// 	display:none;
-// }
-
-// #primary-menu ul {
-// 	display:flex;
-// 	justify-content:flex-end;
-// 	list-style:none;
-// }
-
-// .menuMobile{
-
-// }
-
-// .menuLine{
-// 	width: 35px;
-// 	height: 5px;
-// 	background-color: black;
-// 	margin: 6px 0;
-// }
-
-// /* desktop responsive */
-// @media only screen and (min-width: 601px){
-
-// // }
-
-.flexAlignCenter{
->>>>>>> master
 	display:flex;
 	justify-content:space-between;
 	align-content:center;
@@ -47,6 +11,7 @@
 	margin-top:0.5em;
 	margin-right:1em;
 }
+
 
 .flexAlignRight{
     display:flex;
@@ -139,18 +104,19 @@
 // 	margin:0 auto;
 // }
 
+<<<<<<< HEAD
 // body button {
 // 	margin:0 auto;
 // }
 // tried to align the menu button to the middle
 
-<<<<<<< HEAD
+=======
+@media only screen and (min-width: 601px){
+}
+>>>>>>> origin/master
 
 /********** desktop styling **********/
 
 @media only screen and (min-width: 768px){
 
-=======
-@media only screen and (min-width: 601px){
->>>>>>> master
 }
