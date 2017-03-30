@@ -133,14 +133,6 @@ for (i=0; i<markersvenue.length; i++) {
 
 
 
-// jQuery(document).ready(function(){
-//     jQuery('.scrollbar-rail').scrollbar();
-
-//     // jQuery('.scrollbar-rail').not('.scroll-wrapper').on("scroll", function(){
-//     // console.log('content is scrolling');
-// // });
-// });
-
 (function($){
         $(window).on("load",function(){
         	console.log('i am here');
