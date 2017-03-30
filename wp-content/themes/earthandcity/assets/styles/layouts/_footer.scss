@@ -17,21 +17,34 @@
 }
 
 .widget_nav_menu {
-	
+
 	.menu {
 		list-style:none;
+		
 		li {
 			&:first-child {
+				text-decoration:underline;
+				}
+
 				a {
-					text-decoration:underline;
+					text-decoration:none;
 				}
 			}
 		}
 		a {
 			color:white;
-		}
 	}
 }
+
+// .sub-menu{
+
+// 	li a{
+// 		text-decoration:none !important;
+// 		&:hover {
+// 			text-decoration:none;
+// 		}
+// 	}
+// }
 
 .copyrightLine{
 	display:flex;
@@ -54,16 +67,13 @@
 	display:none !important;
 }
 
-// #mc_mv_EMAIL ::-input-placeholder{
-//     input placeholder:"email";
-// }
-// tried to change input placeholder
+.mc_header_address{
+	display:none;
+}
 
-// .mc_var_label.mc_header.mc_header_email{
-// 	display:none;
-// }
-// tried to delete email address
-
+#mc_mv_EMAIL::placeholder {
+	content:"testr";
+}
 #mc_signup_submit{
 	background-color:black;
 	text:white;

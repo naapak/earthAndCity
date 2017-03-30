@@ -42,32 +42,24 @@
 
 	li a{
 		margin: 0rem 4rem 0rem 0rem;
+		&:hover {
+			text-decoration:none;
+		}
 	}
 	
-	div ul li ul #menu-item-56{
-		border-bottom: 1px solid gainsboro;
-    	border-top: 1px solid gainsboro;	
+	
+	.dropdown-menu {
+		li {
+			border-bottom:1px solid black;
+			a {
+				white-space:nowrap;
+				margin-left: 1em;
+			}
+			&:last-child {
+				border:none;
+			}
+		}
 	}
-
-	div ul li ul #menu-item-49{
-		border-bottom: 1px solid gainsboro;
-    	border-top: 1px solid gainsboro;	
-	}
-
-	div ul li ul #menu-item-53{
-		border-bottom: 1px solid gainsboro;
-    	border-top: 1px solid gainsboro;	
-	}
-
-	div ul li ul #menu-item-52{
-		border-bottom: 1px solid gainsboro;	
-	}		
-
-	div ul li ul li a{
-		white-space:nowrap;
-		margin-left: 1em;
-	}
-
 	// div ul li ul li a:hover{
 	// 	underline: none;
 	// }

@@ -15,7 +15,7 @@ Header
 
   <?php wp_head(); ?>
   </head>
-    
+    <!-- canary -->
     <!-- declares smof to be available for use, logo is being dynamically loaded through smof -->
     <?php global $smof_data; ?>
     
