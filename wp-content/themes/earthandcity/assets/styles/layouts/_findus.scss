@@ -1,5 +1,5 @@
 // Global
-.flex { display: flex;}
+// .flex {display: flex;}
 .textCenter {text-align: center !important;}
 .bold{font-weight: bold;}
 .grey {color:grey;}
@@ -11,6 +11,25 @@
 
 // specific
 /* ACF maps */
+
+.linksSpace { display: flex !important; justify-content:space-between !important;}
+.whiteColorTo {color:black;}
+.whiteColorTo:hover
+{
+  color: grey;
+  text-decoration: none;
+
+}
+.flexButton {display: inline-flex; flex-wrap: wrap; width:90%; }
+.flexonBig {display:flex;}
+.linkButton {
+    margin-bottom: 10px; 
+    background-color: black;     
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white; 
+    font-size: 8px;
+}
 
 .linkButton:hover
 {
@@ -41,39 +60,51 @@
     }
 
 .AddressScroll .markerdata p {margin-bottom: 0px;}
-.AddressScroll .markerdata {margin-bottom: 15px;}
+.AddressScroll .markerdata {margin-bottom: 25px;}
 .markerTitle {margin-bottom: 0px;}
-.btn {background-color: black;     
+.btnSearch {background-color: black;     
 	padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 0;
     color: white; }
+.btnSearch:hover { cursor: pointer;}
 #geocoding_form {margin-bottom:4%;}
 #addressInput { min-width:40%; 
     border: 1px solid black;
     padding-top: 2px;
     padding-bottom: 4px;
     padding-left: 10px;
+    padding-right: 5px;
 }
 
 .GoogleMargin{margin-right:5% !important;}
 
 @media (min-width: 600px) {
+
+.linkButton {
+    font-size: 12px;
+}
+.flexonBig {justify-content: center;}
 #googleMaps { max-height: 60vh!important;}
 .AddressScroll { 
-    min-height: 30vh;
+    max-height: 30vh;
     }
+
 .margin {margin-right:2% !important; margin-left:10% !important;}
 .GoogleMargin{margin-right:0% !important;}
     }
 
 @media (min-width: 900px) {
-#googleMaps { max-height: 60vh!important;}
+
+#googleMaps { max-height: 40vh!important;}
 .AddressScroll { 
-    min-height: 60vh;
+    max-height: 40vh;
     }
 .margin {margin-right:2% !important; margin-left:10% !important;}
 .GoogleMargin{margin-right:0% !important;}
     }
+
+
+
