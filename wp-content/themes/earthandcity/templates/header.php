@@ -103,6 +103,11 @@ Header
             </nav>
         </div>
       </header>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
     </div>
     <?php new banner; ?>
 

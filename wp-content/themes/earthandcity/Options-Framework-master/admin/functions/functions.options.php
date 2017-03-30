@@ -103,13 +103,31 @@ if (!function_exists('of_options'))
 global $of_options;
 $of_options = array();
 
-$of_options[] = array( 	"name" 		=> "Catering Settings",
+$of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
 					
+<<<<<<< HEAD
 
+=======
+// $of_options[] = array( 	"name" 		=> "Hello there!",
+// 						"desc" 		=> "",
+// 						"id" 		=> "introduction",
+// 						"std" 		=> "<h3 style=\"margin: 0 0 10px;\">Welcome to the Options Framework demo.</h3>
+// 						This is a slightly modified version of the original options framework by Devin Price with a couple of aesthetical improvements on the interface and some cool additional features. If you want to learn how to setup these options or just need general help on using it feel free to visit my blog at <a href=\"http://aquagraphite.com/2011/09/29/slightly-modded-options-framework/\">AquaGraphite.com</a>",
+// 						"icon" 		=> true,
+// 						"type" 		=> "info"
+// 				);
+// $of_options[] = array( 	"name" 		=> "Catering Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_links",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+>>>>>>> master
 
-$of_options[] = array( 	"name" 		=> "Title",
+$of_options[] = array( 	"name" 		=> "Catering Page Title",
 						"desc" 		=> "Enter a title",
 						"id" 		=> "archive_catering_title",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
@@ -117,17 +135,43 @@ $of_options[] = array( 	"name" 		=> "Title",
 						"type" 		=> "text"
 				);
 
-$of_options[] = array( 	"name" 		=> "Content",
+$of_options[] = array( 	"name" 		=> "Catering Page Content",
 						"desc" 		=> "Enter some content.",
 						"id" 		=> "example_textarea",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);
 
+<<<<<<< HEAD
 //-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
 
 
 
+=======
+$of_options[] = array( 	"name" 		=> "Catering Page Sub Title",
+						"desc" 		=> "Enter a sub title",
+						"id" 		=> "archive_catering_subtitle",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
+				);
+
+// $of_options[] = array( 	"name" 		=> "FAQ Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_title",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+
+$of_options[] = array( 	"name" 		=> "FAQ Page Title",
+						"desc" 		=> "Enter a title",
+						"id" 		=> "archive_faq_title",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
+				);
+>>>>>>> master
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
