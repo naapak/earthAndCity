@@ -107,9 +107,8 @@ $of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
 					
-<<<<<<< HEAD
 
-=======
+
 // $of_options[] = array( 	"name" 		=> "Hello there!",
 // 						"desc" 		=> "",
 // 						"id" 		=> "introduction",
@@ -125,7 +124,7 @@ $of_options[] = array( 	"name" 		=> "Archive Settings",
 // 						"std" 		=> "",
 // 						"type" 		=> "text"
 // 				);
->>>>>>> master
+
 
 $of_options[] = array( 	"name" 		=> "Catering Page Title",
 						"desc" 		=> "Enter a title",
@@ -142,12 +141,11 @@ $of_options[] = array( 	"name" 		=> "Catering Page Content",
 						"type" 		=> "textarea"
 				);
 
-<<<<<<< HEAD
+
 //-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
 
 
 
-=======
 $of_options[] = array( 	"name" 		=> "Catering Page Sub Title",
 						"desc" 		=> "Enter a sub title",
 						"id" 		=> "archive_catering_subtitle",
@@ -171,7 +169,7 @@ $of_options[] = array( 	"name" 		=> "FAQ Page Title",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);
->>>>>>> master
+
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
@@ -412,7 +410,7 @@ $of_options[] = array( 	"name" 		=> "Folding Checkbox",
 $of_options[] = array( 	"name" 		=> "Hidden option 1",
 						"desc" 		=> "This is a sample hidden option 1",
 						"id" 		=> "hidden_option_1",
-						"std" 		=> "Hi, I\'m just a text input",
+						"std" 		=> "Hi, I'm just a text input",
 						"fold" 		=> "offline", /* the checkbox hook */
 						"type" 		=> "text"
 				);
@@ -420,7 +418,7 @@ $of_options[] = array( 	"name" 		=> "Hidden option 1",
 $of_options[] = array( 	"name" 		=> "Hidden option 2",
 						"desc" 		=> "This is a sample hidden option 2",
 						"id" 		=> "hidden_option_2",
-						"std" 		=> "Hi, I\'m just a text input",
+						"std" 		=> "Hi, I'm just a text input",
 						"fold" 		=> "offline", /* the checkbox hook */
 						"type" 		=> "text"
 				);
