@@ -8,15 +8,16 @@
 .marginRight {margin-right:5% !important;}
 .marginLeft {margin-left:5% !important;}
 .marginBottom {margin-bottom: 5vh !important;}
+.marginTop {margin-top: 5vh !important;}
 
 // specific
 /* ACF maps */
 
 .linksSpace { display: flex !important; justify-content:space-between !important;}
-.whiteColorTo {color:black;}
+.whiteColorTo {color:grey;}
 .whiteColorTo:hover
 {
-  color: grey;
+  color: black;
   text-decoration: none;
 
 }
@@ -36,8 +37,6 @@
   color: white;
 
 }
-
-
 
 .acf-map {
     width: 100%;
@@ -82,12 +81,13 @@
 .GoogleMargin{margin-right:5% !important;}
 
 @media (min-width: 600px) {
+.marginBottom {margin-bottom: 10vh !important;}
 
 .linkButton {
     font-size: 12px;
 }
 .flexonBig {justify-content: center;}
-#googleMaps { max-height: 60vh!important;}
+#googleMaps { max-height: 30vh!important;}
 .AddressScroll { 
     max-height: 30vh;
     }
@@ -97,14 +97,86 @@
     }
 
 @media (min-width: 900px) {
+.marginBottom {margin-bottom: 12vh !important;}
+.linkButton {
+    font-size: 16px;
+}
 
-#googleMaps { max-height: 40vh!important;}
+#googleMaps { max-height: 50vh!important;}
 .AddressScroll { 
-    max-height: 40vh;
+    max-height: 50vh;
     }
 .margin {margin-right:2% !important; margin-left:10% !important;}
 .GoogleMargin{margin-right:0% !important;}
     }
 
 
+
+// front page //
+
+.shopCategories {
+  width: 75%;
+  // border: 1px solid grey; border-top: 6px solid grey; 
+  margin-top: 2rem; 
+  margin-bottom: 5rem;
+  // margin-right: 2%;
+  // margin-left:2%;
+}
+
+.emailBackground {
+background-color: grey;
+
+}
+.paddingTopBottom {padding-bottom: 5vh !important; padding-top: 5vh !important;}
+
+
+.home2Button {
+    margin-bottom: 10px; 
+    color: black; 
+    text-decoration: none;
+}
+
+.home2Button:hover
+{
+  color: black;
+  text-decoration: none;
+
+
+}
+
+
+#emailAddressInput { min-width:40%; 
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+.emailJoinbtn {
+    background-color: black; 
+    font-size: 30px;    
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 0;
+    color: white; 
+}
+
+.homeButtons {
+        display: flex;
+        justify-content: center;
+        padding-bottom:3rem;
+        
+        .homeButton {
+            padding:1.5rem 2.5rem;
+            margin:.7rem;
+            font-size:1.6rem;
+            background:#333;
+            a {
+                color:white;
+            }
+        }
+    }
 

@@ -1,28 +1,25 @@
-<p>I am in the taxonomy-venue.php</p>
-
-
 <?php
-            $tax = get_object_taxonomies (array ('locations', "venue"));
+    
+    $tax = get_object_taxonomies (array ('locations', "venue"));
             // var_dump($tax);
-              $terms = get_terms($tax, array('hide_empty' => false,)); 
+    $terms = get_terms($tax, array('hide_empty' => false,)); 
               // print_r($terms);
-
              ?> 
             
              
-             <div class=" marginBottom  linksSpace" >
-             	 <!-- <div class=""> -->
-             <?foreach ($terms as $term) : ?>
+             <div class=" marginBottom  linksSpace marginTop" >
+             	
+             	<?foreach ($terms as $term) : ?>
             
-			<div class=" col-sm-4 ">
+				<div class=" col-sm-4 ">
  		 		
- 		 	<a class="btn btn-block linkButton" role="button"  href="<?php echo get_term_link($term); ?>"><?php echo $term->name ?></a>
+ 		 			<a class="btn btn-block linkButton" role="button"  href="<?php echo get_term_link($term); ?>"><?php echo $term->name ?></a>
  		 		
- 		 	</div>
+ 		 		</div>
  		 	
  			
- 		 	<? endforeach; ?>
- 		 	<!-- </div> -->
+ 		 		<? endforeach; ?>
+ 		 
 			</div>
 			
  		 	
@@ -31,14 +28,16 @@
 
  <?php if ( have_posts() ) : ?>
 
-			<header class="page-header textCenter marginBottom ">
-				<?php
+			<header class="page-header textCenter marginBottom marginTop">
+			<!-- 	<?php
 					$taxonomies = get_queried_object();
 				
 					// print_r($taxonomies);
 					// usort($taxonomies);
+					echo ( get_post_type() );
 				?>
-					<h1 class="caps marginBottom"><?php echo $taxonomies->name?></h1>
+
+					<h1 class="caps marginBottom"><?php echo $taxonomies->name?></h1> -->
  		 			
 
  		 	<?php  $countingPosts = get_queried_object()->count;
@@ -52,7 +51,7 @@
         <?php  }?>  <!-- search bar -->
         	
             
-	</div class="container  ">
+	</div class="container marginTop ">
  		 			
 			</header><!-- .page-header -->
 			<?php endif; ?>		

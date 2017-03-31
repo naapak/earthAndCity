@@ -9,6 +9,7 @@ class banner {
     }
 
     $this->title = get_field("banner_title");
+
     $this->content = get_field("banner_content");
     
     self::output();
@@ -17,8 +18,8 @@ class banner {
   public function banner_start() {
     $return .= '
     <style>
-    	.banner-wrap {background:url("'.$this->image.'") center center  / 100% }
-	</style>
+    	.banner-wrap {background: no-repeat url("'.$this->image.'") center center  / 100% }
+	  </style>
     <div class="banner-wrap">
       <div class="banner-content">
         '.self::get_title().'
@@ -29,8 +30,12 @@ class banner {
   }
 
   public function get_title() {
-    if (is_archive()) {
+    if (is_tax('locations')) {
+      $taxonomies = get_queried_object();
+      $this->title = $taxonomies->name;
+    }elseif( is_archive()) {
       $this->title = get_post_type();
+      
     }elseif($this->title == "") {
       $this->title = get_the_title();
     }
