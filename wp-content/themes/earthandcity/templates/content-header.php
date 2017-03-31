@@ -8,7 +8,8 @@ if ( is_post_type_archive('catering') ) { ?>
 	<div class="catering-info">
 		<?php echo $smof_data['example_textarea']; ?>
 	</div>
-	<h3 class="catering-subtitle"><?php echo $smof_data['archive_catering_subtitle'];?></h3>
+	<a href=""><button class="contact-button" type="button"><?php echo $smof_data['archive_catering_button']; ?> </button></a>
+	<h3 class="catering-subtitle hidden-sm-down"><?php echo $smof_data['archive_catering_subtitle'];?></h3>
 
 <?php } elseif ( is_post_type_archive('faq') ) { ?>
 	

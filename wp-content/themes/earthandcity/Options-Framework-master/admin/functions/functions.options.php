@@ -129,6 +129,40 @@ $of_options[] = array( 	"name" 		=> "Content",
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+$of_options[] = array( 	"name" 		=> "Catering Page Button",
+						"desc" 		=> "Enter a sub title",
+						"id" 		=> "archive_catering_button",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
+				);
+
+
+// $of_options[] = array( 	"name" 		=> "FAQ Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_title",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+					
+$of_options[] = array( 	"name" 		=> "Background Images",
+						"desc" 		=> "Select a background pattern.",
+						"id" 		=> "custom_bg",
+						"std" 		=> $bg_images_url."bg0.png",
+						"type" 		=> "tiles",
+						"options" 	=> $bg_images,
+				);
+
+//---------------------- END OF ARCHIVE (CATERING/FAQ) SETTINGS ----------------------
+
+>>>>>>> origin/master
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);
