@@ -128,13 +128,6 @@ $of_options[] = array( 	"name" 		=> "Content",
 
 
 
-
-<<<<<<< HEAD
-=======
-
-
-
-
 $of_options[] = array( 	"name" 		=> "Catering Page Button",
 						"desc" 		=> "Enter a sub title",
 						"id" 		=> "archive_catering_button",
@@ -162,7 +155,7 @@ $of_options[] = array( 	"name" 		=> "Background Images",
 
 //---------------------- END OF ARCHIVE (CATERING/FAQ) SETTINGS ----------------------
 
->>>>>>> origin/master
+
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);

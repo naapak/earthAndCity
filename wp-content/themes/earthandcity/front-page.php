@@ -3,13 +3,22 @@
 
 <!-- email -->
 
-<div id="mc_embed_signup">
+		
+
+
+
+<div  id="mc_embed_signup" class="paddingTopBottom emailBackground">
+
+	<h5 class="textCenter" >Sign-up for exclusive offers! </h5>
+
 				<form action="//earthandcity.us9.list-manage.com/subscribe/post?u=0d5ee7dafe74014c19b7248e3&amp;id=9df49b8429" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				    <div id="mc_embed_signup_scroll">
+				    <div id="mc_embed_signup_scroll" class="col-sm-12 textCenter ">
 						<div class="mc-field-group">
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email...">
+		<input type="email" value="" name="EMAIL" id="mce-EMAIL" class="emailAddressInput" placeholder="Enter your email address">
+						
+						
+						<input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="btn emailJoinbtn">
 						</div>
-						<div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button signUpButton"></div>
 					<div class="mc-field-group input-group"></div>
 					<div id="mce-responses" class="clear">
 						<div class="response" id="mce-error-response" style="display:none"></div>
@@ -19,19 +28,7 @@
 				    
 				    </div>
 				</form>
-			</div>
-
-
-
-<div class="paddingTopBottom emailBackground">
-
-	<h5 class="textCenter" >Sign-up for exclusive offers! </h5>
-			<form method="post" id="" class="textCenter" >
-		          <div class="col-sm-12 textCenter ">
-		            <input type="text" id="emailAddressInput" name="address" placeholder="Enter your email address">
-		            <input type="submit" class="btn emailJoinbtn" id="geocoding_form_btn" value="Join">
-		          </div>
-        	</form>
+		
          <!-- search bar -->
 </div>
 
