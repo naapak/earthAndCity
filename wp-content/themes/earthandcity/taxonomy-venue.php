@@ -10,17 +10,19 @@
              ?> 
             
              
-             <div class="flex marginBottom" >
-
+             <div class=" marginBottom  linksSpace" >
+             	 <!-- <div class=""> -->
              <?foreach ($terms as $term) : ?>
-             
-			<div class=" col-sm-4 col-md-4 col-lg-4 ">
+            
+			<div class=" col-sm-4 ">
  		 		
  		 	<a class="btn btn-block linkButton" role="button"  href="<?php echo get_term_link($term); ?>"><?php echo $term->name ?></a>
  		 		
  		 	</div>
+ 		 	
  			
  		 	<? endforeach; ?>
+ 		 	<!-- </div> -->
 			</div>
 			
  		 	
@@ -29,7 +31,7 @@
 
  <?php if ( have_posts() ) : ?>
 
-			<header class="page-header textCenter margin marginBottom">
+			<header class="page-header textCenter marginBottom ">
 				<?php
 					$taxonomies = get_queried_object();
 				
@@ -44,7 +46,7 @@
  		 	<form method="post" id="geocoding_form" class="textCenter" >
 		          <div class="col-sm-12 textCenter ">
 		            <input type="text" id="addressInput" name="address" placeholder="Address or Postal Code">
-		            <input type="submit" class="btn " id="geocoding_form_btn" value="Search">
+		            <input type="submit" class="btn btnSearch" id="geocoding_form_btn" value="Search">
 		          </div>
         	</form>
         <?php  }?>  <!-- search bar -->
@@ -56,20 +58,20 @@
 			<?php endif; ?>		
 
 
-            <div class="row marginBottom ">
-            <div class="  col-md-5 AddressScroll margin scrolling">
+            <div class="row marginBottom"  >
+            <div class="col-md-5 AddressScroll margin customScroll"  >
              <?php if ( $countingPosts > 1) {  ?>	
             <p class="grey"> Sorted - Alphabetical</p>
             <?php  }?> 
             <?php   $markers_array = array(); ?>
   				<?php  while ( have_posts() ) : the_post(); ?>
  					
- 				<article id="post-<?php the_ID(); ?>" class=""  <?php post_class(); ?>>
+ 				<article id="post-<?php the_ID(); ?>"   <?php post_class(); ?>>
 					<header class="markerdata">
 					<?php if(get_field("website_address") == null) { ?> 
 						<p class="bold"><?php echo the_title()?></p>
 					<?php } else { ?>
-						<a href="https://<?php echo get_field("website_address")?>" class="">
+						<a class="whiteColorTo bold" href="https://<?php echo get_field("website_address")?>" class="">
 						<?php echo the_title()?>
 						</a>
 					<?php } ?>
