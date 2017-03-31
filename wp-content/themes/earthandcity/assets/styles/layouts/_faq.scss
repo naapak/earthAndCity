@@ -1,3 +1,30 @@
 .faq-question {
 	color: #4F4B4B;
+	font-size: 1.3em;
+    padding: 1em 0;
+}
+
+.faq {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post-type-archive-faq {
+	.down-chevron {
+		margin: 0 1em;
+		height: 13px;
+	}
+
+	.faq-content {
+		padding: 0em;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
 }

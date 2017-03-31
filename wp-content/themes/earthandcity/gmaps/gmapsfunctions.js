@@ -123,7 +123,24 @@ for (i=0; i<markersvenue.length; i++) {
   });
  // } //if statement ends
 
+
 } //googleMaps.length 
+
+$(".accordion-box").click(function() {
+
+ 	if ( $(this).find(".down-chevron").hasClass('arrow-clicked') ) {
+ 		$(this).find(".down-chevron").removeClass('arrow-clicked')
+ 	}
+ 	else {
+ 		$(this).find(".down-chevron").addClass('arrow-clicked');
+ 		}
+});
+
+
+
+
 }); // ends document ready
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
