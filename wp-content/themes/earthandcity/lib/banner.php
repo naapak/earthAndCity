@@ -17,7 +17,7 @@ class banner {
   public function banner_start() {
     $return .= '
     <style>
-    	.banner-wrap {background:url("'.$this->image.'") center center  / 100% }
+    	.banner-wrap {background-image:url("'.$this->image.'"); }
 	</style>
     <div class="banner-wrap">
       <div class="banner-content">

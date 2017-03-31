@@ -15,7 +15,7 @@ Header
 
   <?php wp_head(); ?>
   </head>
-    <!-- canary -->
+    
     <!-- declares smof to be available for use, logo is being dynamically loaded through smof -->
     <?php global $smof_data; ?>
     
@@ -45,14 +45,15 @@ Header
           <div class="navbar-header">
 
             <!-- button to collapse and display mobile-only menu -->
+            <!-- <form action="/banner.php"> -->
+              <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
 
-            <button type="button" class="navbar-toggle collapsed menuIcon" data-toggle="collapse" data-target=".displayMobileMenu">
-
-              <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+                <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </form>
 
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
           </div>
@@ -85,9 +86,9 @@ Header
 
           <!-- navbar for mobile -->
 
-          <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse" role="navigation">
+          <!-- <nav id="mobile-navigation" class="navbar-collapse main-navigation hidden-md-up displayMobileMenu collapse" role="navigation"> -->
 
-              <?php
+              <!-- <?php
               wp_nav_menu( array(
                 'menu'              => 'mobile',
                 'theme_location'    => 'mobile',
@@ -99,8 +100,8 @@ Header
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker()
                 ));
-              ?>
-            </nav>
+              ?> -->
+            <!-- </nav> -->
         </div>
       </header>
 

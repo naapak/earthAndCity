@@ -60,9 +60,6 @@
 			}
 		}
 	}
-	// div ul li ul li a:hover{
-	// 	underline: none;
-	// }
 }
 
 .nav.navbar-nav{
@@ -84,23 +81,16 @@
 /********** mobile menu button specific styling **********/
 
 .menuIcon{
-	background:url("../../assets/images/IconsPNG/menu-button.png");
-	background-size:contain;
-	background-position:center;
-	height:3em;
-	width:3em;
-	margin: 0 auto;
+    background: url(../../assets/images/IconsPNG/menu-button.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 3em;
+    width: 3em;
+    margin: 0 auto;
+    margin-top: 1em;
     display: block;
+    border: none;
 }
-
-// .navbar-toggle.collapsed.menuIcon.hidden-md-up{
-// 	margin:0 auto;
-// }
-
-// body button {
-// 	margin:0 auto;
-// }
-// tried to align the menu button to the middle
 
 
 /********** desktop styling **********/
