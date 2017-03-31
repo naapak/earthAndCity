@@ -18,10 +18,18 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "layouts/taxonomy-impact";
+@import "taxonomy-impact";
 @import "layouts/catering";
+<<<<<<< HEAD
 @import "layouts/findus";
 @import "layouts/fonts";
-@import "layouts/jquerymCustomScrollbar";
+=======
+// @import "archive-ourimpact";
+@import "layouts/findus";
+
+@import "layouts/jquerymCustomScrollbar"
 
 @import "layouts/faq";
+
+
+>>>>>>> naapak/master

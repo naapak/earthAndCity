@@ -1,0 +1,9 @@
+@font-face{
+  font-family: 'proxima_nova_rgregular';
+    src: url('../../assets/fonts/ProximaNovaWeb/proxima_nova_rgregular.woff2') format('woff2');
+  	src: url('../../assets/fonts/ProximaNovaWeb/proxima_nova_rgregular.woff') format('woff');
+}
+
+body {
+  font-family: 'proxima_nova_rgregular', Fallback, sans-serif;
+}

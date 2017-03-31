@@ -40,6 +40,8 @@ $(document).ready(function(){
 
 
 
+
+
 $("#acf-field-latitude").prop('disabled', true);
 $("#acf-field-longitude").prop('disabled', true);
  var $input = $('<input type="button" value="Enter" class="button button-primary button-large goButton"/>');
@@ -126,6 +128,7 @@ for (i=0; i<markersvenue.length; i++) {
 
 } //googleMaps.length 
 
+
 $(".accordion-box").click(function() {
 
  	if ( $(this).find(".down-chevron").hasClass('arrow-clicked') ) {
@@ -138,9 +141,28 @@ $(".accordion-box").click(function() {
 
 
 
-
 }); // ends document ready
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+(function($){
+        $(window).on("load",function(){
+        	console.log('i am here');
+            $(".customScroll").mCustomScrollbar({
+ 	axis:"y",
+      theme:"dark",
+        //   scrollButtons:{ enable: true },
+        //   live:"on",
+        //   advanced:{ updateOnContentResize: true,      updateOnSelectorChange:true },
+        //   documentTouchScroll: false
+        });
+        });
+
+
+
+    })(jQuery);
+
 
 

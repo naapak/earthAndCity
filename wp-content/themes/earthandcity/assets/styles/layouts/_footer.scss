@@ -1,21 +1,104 @@
+/***** General styling *****/
+
+
 .footerBackground{
-	background-color:black;
+	background-color:#000;
 	background-size:cover;
 	min-width:100%;
-	height:50vh;
+	padding:2rem;
+	.footer_sign_up {
+
+	}
 }
 
-.flexAlignRight{
+.flexRight{
 	display:flex;
 	justify-content:flex-end;
 }
 
+.widget_nav_menu {
+
+	.menu {
+		list-style:none;
+		padding:0;
+		a {
+			color:white;
+			text-decoration:underline;
+		}
+		.sub-menu {
+			list-style:none;
+			padding:0;
+			a {
+				text-decoration:none;
+			}
+		}
+		
+	}
+}
+
+.copyrightLine{
+	display:flex;
+	justify-content:flex-end;
+	color:white;
+	white-space:nowrap;
+}
 
 
-// .mc_header_address{
-// 	display:none;
-// }
 
-// .mc_email_format{
-// 	display:none;
-// }
+/***** MailChimp plugin styling *****/
+
+
+.mc_email_format,#mc_display_rewards,.mc_email_format,.field-group{
+	display:none !important;
+}
+
+.mc_header_address{
+	// display:none;
+}
+
+#mc_mv_EMAIL::placeholder {
+	content:"testr";
+}
+#mc_signup_submit{
+	background-color:black;
+	text:white;
+	border:1px solid white;
+}
+
+#menu-footer{
+	list-style:none;
+}
+
+#mc_signup_submit {
+    margin-top: 2em !important;
+    width: 100% !important;
+}
+
+.mc_signup_submit {
+	width:25%;
+	float:left;
+}
+
+.mc_merge_var {
+	width:75%;
+	float:left;
+}
+
+.mc_custom_border_hdr {
+	color:white;
+}
+
+.signUpButton{
+	background:black;
+	color:white;
+	border:1px solid white;
+}
+
+
+
+/********** desktop styling **********/
+
+@media only screen and (min-width: 768px){
+
+}
+

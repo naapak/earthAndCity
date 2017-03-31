@@ -1,4 +1,4 @@
-<h1>I am in the about us template</h1>
+<h1>I am in the about us template-custom.php</h1>
 
 <?php
 /**
