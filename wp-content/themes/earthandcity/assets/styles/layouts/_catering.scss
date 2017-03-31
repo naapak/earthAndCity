@@ -12,9 +12,20 @@
 }
 
 .catering-subtitle {
+	// display: none;
 	text-align: center;
 	color: #4F4B4B;
 	padding: 1.5em;
+}
+
+.contact-button {
+	background-color: #3A3737;
+	color: white;
+	margin: 1em auto;
+	padding: 1em;
+	border: none;
+	display: block;
+	margin: 0 auto;
 }
 
 .catering-text {
@@ -33,6 +44,7 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	position: relative;
 }
 
 .catering-content {
@@ -45,10 +57,10 @@
 	text-align: center;
 	position: relative;
 	top: 45%;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 2px 2px #4f4b4b;
 }
 
-:hover {
+.accordion-box .menu-title:hover {
 	text-decoration: none;
 }
 
@@ -57,16 +69,50 @@
 	margin: 0 auto;
 }
 
+.arrow-down {
+	height: 10%;
+	width: 5%;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.down-chevron {
+	height: 15px;
+	text-align: center;
+	align-self: center;
+}
+
+.arrow-clicked {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+}
+
+.post-type-archive-catering {
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
 
 /***************TABLET****************************/
 
-@media (min-width: 600px) {
+// @media (min-width: 600px) {
 
-}
+// }
 
 /***************DESKTOP****************************/
 
-@media (min-width: 1050px) {
+@media (min-width: 700px) {
 	.catering-info {
 		width: 50%;
 	}
