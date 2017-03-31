@@ -103,13 +103,11 @@ if (!function_exists('of_options'))
 global $of_options;
 $of_options = array();
 
-$of_options[] = array( 	"name" 		=> "Catering Settings",
+$of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
-					
 
-
-$of_options[] = array( 	"name" 		=> "Title",
+$of_options[] = array( 	"name" 		=> "Catering Page Title",
 						"desc" 		=> "Enter a title",
 						"id" 		=> "archive_catering_title",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
@@ -117,15 +115,12 @@ $of_options[] = array( 	"name" 		=> "Title",
 						"type" 		=> "text"
 				);
 
-$of_options[] = array( 	"name" 		=> "Content",
+$of_options[] = array( 	"name" 		=> "Catering Page Content",
 						"desc" 		=> "Enter some content.",
 						"id" 		=> "example_textarea",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);
-
-//-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
-
 
 
 $of_options[] = array( 	"name" 		=> "Catering Page Button",
@@ -136,22 +131,21 @@ $of_options[] = array( 	"name" 		=> "Catering Page Button",
 						"type" 		=> "text"
 				);
 
-
-// $of_options[] = array( 	"name" 		=> "FAQ Page Links",
-// 						"desc" 		=> "Enter a title",
-// 						"id" 		=> "archive_catering_title",
-// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
-// 						"std" 		=> "",
-// 						"type" 		=> "text"
-// 				);
-					
-$of_options[] = array( 	"name" 		=> "Background Images",
-						"desc" 		=> "Select a background pattern.",
-						"id" 		=> "custom_bg",
-						"std" 		=> $bg_images_url."bg0.png",
-						"type" 		=> "tiles",
-						"options" 	=> $bg_images,
+$of_options[] = array( 	"name" 		=> "Catering Page Subtitle",
+						"desc" 		=> "Enter some content.",
+						"id" 		=> "archive_catering_subtitle",
+						"std" 		=> "",
+						"type" 		=> "text"
 				);
+
+$of_options[] = array( 	"name" 		=> "FAQ Page Title",
+						"desc" 		=> "Enter some content.",
+						"id" 		=> "archive_faq_Title",
+						"std" 		=> "",
+						"type" 		=> "text"
+				);
+
+
 
 //---------------------- END OF ARCHIVE (CATERING/FAQ) SETTINGS ----------------------
 
@@ -160,15 +154,20 @@ $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);
 					
-
-$of_options[] = array( 	"name" 		=> "Logo",
-						"desc" 		=> "Upload the logo for the site.",
-						"id" 		=> "logo",
-						"std" 		=> "",
-						"type" 		=> "upload",
-						
-				);
-				
+$url =  ADMIN_DIR . 'assets/images/';
+$of_options[] = array( 	"name" 		=> "Main Layout",
+						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
+						"id" 		=> "layout",
+						"std" 		=> "2c-l-fixed.css",
+						"type" 		=> "images",
+						"options" 	=> array(
+							'1col-fixed.css' 	=> $url . '1col.png',
+							'2c-r-fixed.css' 	=> $url . '2cr.png',
+							'2c-l-fixed.css' 	=> $url . '2cl.png',
+							'3c-fixed.css' 		=> $url . '3cm.png',
+							'3c-r-fixed.css' 	=> $url . '3cr.png'
+						)
+				);		
 $of_options[] = array( 	"name" 		=> "Tracking Code",
 						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
 						"id" 		=> "google_analytics",
@@ -444,7 +443,7 @@ $of_options[] = array( 	"name" 		=> "Hello there!",
 										"std" 		=> "#2098a8",
 										"type" 		=> "color"
 								);
-				
+		
 // Backup Options
 $of_options[] = array( 	"name" 		=> "Backup Options",
 						"type" 		=> "heading",
