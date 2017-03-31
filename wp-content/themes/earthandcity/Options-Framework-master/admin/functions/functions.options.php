@@ -103,10 +103,13 @@ if (!function_exists('of_options'))
 global $of_options;
 $of_options = array();
 
-$of_options[] = array( 	"name" 		=> "Catering Settings",
+$of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
 					
+<<<<<<< HEAD
+
+=======
 // $of_options[] = array( 	"name" 		=> "Hello there!",
 // 						"desc" 		=> "",
 // 						"id" 		=> "introduction",
@@ -115,8 +118,16 @@ $of_options[] = array( 	"name" 		=> "Catering Settings",
 // 						"icon" 		=> true,
 // 						"type" 		=> "info"
 // 				);
+// $of_options[] = array( 	"name" 		=> "Catering Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_links",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+>>>>>>> master
 
-$of_options[] = array( 	"name" 		=> "Title",
+$of_options[] = array( 	"name" 		=> "Catering Page Title",
 						"desc" 		=> "Enter a title",
 						"id" 		=> "archive_catering_title",
 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
@@ -124,47 +135,55 @@ $of_options[] = array( 	"name" 		=> "Title",
 						"type" 		=> "text"
 				);
 
-$of_options[] = array( 	"name" 		=> "Content",
+$of_options[] = array( 	"name" 		=> "Catering Page Content",
 						"desc" 		=> "Enter some content.",
 						"id" 		=> "example_textarea",
 						"std" 		=> "",
 						"type" 		=> "textarea"
 				);
 
+<<<<<<< HEAD
+//-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
 
-					
-$of_options[] = array( 	"name" 		=> "Background Images",
-						"desc" 		=> "Select a background pattern.",
-						"id" 		=> "custom_bg",
-						"std" 		=> $bg_images_url."bg0.png",
-						"type" 		=> "tiles",
-						"options" 	=> $bg_images,
+
+
+=======
+$of_options[] = array( 	"name" 		=> "Catering Page Sub Title",
+						"desc" 		=> "Enter a sub title",
+						"id" 		=> "archive_catering_subtitle",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
 				);
-					
-$of_options[] = array( 	"name" 		=> "Typography",
-						"desc" 		=> "Typography option with each property can be called individually.",
-						"id" 		=> "custom_type",
-						"std" 		=> array('size' => '12px','style' => 'bold italic'),
-						"type" 		=> "typography"
+
+// $of_options[] = array( 	"name" 		=> "FAQ Page Links",
+// 						"desc" 		=> "Enter a title",
+// 						"id" 		=> "archive_catering_title",
+// 						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+// 						"std" 		=> "",
+// 						"type" 		=> "text"
+// 				);
+
+$of_options[] = array( 	"name" 		=> "FAQ Page Title",
+						"desc" 		=> "Enter a title",
+						"id" 		=> "archive_faq_title",
+						// Use the shortcodes [site_url] or [site_url_secure] for setting default URLs
+						"std" 		=> "",
+						"type" 		=> "text"
 				);
+>>>>>>> master
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);
 					
-$url =  ADMIN_DIR . 'assets/images/';
-$of_options[] = array( 	"name" 		=> "Main Layout",
-						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
-						"id" 		=> "layout",
-						"std" 		=> "2c-l-fixed.css",
-						"type" 		=> "images",
-						"options" 	=> array(
-							'1col-fixed.css' 	=> $url . '1col.png',
-							'2c-r-fixed.css' 	=> $url . '2cr.png',
-							'2c-l-fixed.css' 	=> $url . '2cl.png',
-							'3c-fixed.css' 		=> $url . '3cm.png',
-							'3c-r-fixed.css' 	=> $url . '3cr.png'
-						)
+
+$of_options[] = array( 	"name" 		=> "Logo",
+						"desc" 		=> "Upload the logo for the site.",
+						"id" 		=> "logo",
+						"std" 		=> "",
+						"type" 		=> "upload",
+						
 				);
 				
 $of_options[] = array( 	"name" 		=> "Tracking Code",

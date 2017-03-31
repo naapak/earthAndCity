@@ -1,12 +1,8 @@
 <?php
-
 namespace Roots\Sage\Extras;
-
 use Roots\Sage\Setup;
 
-/**
- * Add <body> classes
- */
+
 function body_class($classes) {
   // Add page slug if it doesn't exist
   if (is_single() || is_page() && !is_front_page()) {
@@ -70,4 +66,4 @@ function get_post_args($category) {
     return $args;
 }
 
-?>
+

@@ -1,0 +1,111 @@
+/***** General styling *****/
+
+
+.footerBackground{
+	background-color:#000;
+	background-size:cover;
+	min-width:100%;
+	padding:2rem;
+	.footer_sign_up {
+
+	}
+}
+
+.flexAlignRight{
+	display:flex;
+	justify-content:flex-end;
+}
+
+.widget_nav_menu {
+	
+	.menu {
+		list-style:none;
+		li {
+			&:first-child {
+				a {
+					text-decoration:underline;
+				}
+			}
+		}
+		a {
+			color:white;
+		}
+	}
+}
+
+.copyrightLine{
+	display:flex;
+	justify-content:flex-end;
+	color:white;
+	white-space:nowrap;
+}
+
+// .content-info div section div ul li ul li a{
+// 	list-style:none;
+// 	text-decoration:none;
+// }
+// tried to remove styling on footer menu links
+
+
+/***** MailChimp plugin styling *****/
+
+
+.mc_email_format,#mc_display_rewards,.mc_email_format,.field-group{
+	display:none !important;
+}
+
+// #mc_mv_EMAIL ::-input-placeholder{
+//     input placeholder:"email";
+// }
+// tried to change input placeholder
+
+// .mc_var_label.mc_header.mc_header_email{
+// 	display:none;
+// }
+// tried to delete email address
+
+#mc_signup_submit{
+	background-color:black;
+	text:white;
+	border:1px solid white;
+	// input[value="text"] {color:white}; tried to change the initial input value color to white
+}
+
+#menu-footer{
+	list-style:none;
+}
+
+#mc_signup_submit {
+    margin-top: 2em !important;
+    width: 100% !important;
+}
+
+.mc_signup_submit {
+	width:25%;
+	float:left;
+}
+
+.mc_merge_var {
+	width:75%;
+	float:left;
+}
+
+.mc_custom_border_hdr {
+	color:white;
+}
+
+
+// .mc_merge_var{
+	
+// 	.mc_var_label,.mc_header,.mc_header_email {
+// 		// display:none;
+// 	}
+// }
+
+
+/********** desktop styling **********/
+
+@media only screen and (min-width: 768px){
+
+}
+

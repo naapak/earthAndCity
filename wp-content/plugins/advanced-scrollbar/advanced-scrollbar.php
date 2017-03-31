@@ -89,8 +89,9 @@ function ppm_customscrollbar_active_js(){
                 scrollspeed: <?php echo $scrollbar_speed; ?>,
                 railalign: "<?php echo $scrollbar_railalign; ?>",
 				background: "<?php echo $scrollbar_background; ?>",  
-				touchbehavior:<?php echo $scrollbar_touchbehavior; ?>,
+				// touchbehavior:<?php echo $scrollbar_touchbehavior; ?>,
 				mousescrollstep: <?php echo $scrollbar_mousescrollstep;?>,
+                // cursordragontouch: true,
 				autohidemode: <?php echo $scrollbar_autohidemode;?>,   // working 
             });
     });

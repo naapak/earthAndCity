@@ -8,34 +8,45 @@
               // print_r($terms);
 
              ?> 
-			 <div class="flex textCenter margin">
- 		 		<?foreach ($terms as $term) : ?>
-
- 		 		 <?php 
- 		 			// echo get_term_link($term); ?> 
- 		 		 <a href="<?php echo get_term_link($term); ?>"><?php echo $term->name ?></a>
- 		 		 <p></p>
- 		 		<? endforeach; ?>
- 		 	</div> 
+            
+             
+             <div class=" marginBottom  linksSpace" >
+             	 <!-- <div class=""> -->
+             <?foreach ($terms as $term) : ?>
+            
+			<div class=" col-sm-4 ">
+ 		 		
+ 		 	<a class="btn btn-block linkButton" role="button"  href="<?php echo get_term_link($term); ?>"><?php echo $term->name ?></a>
+ 		 		
+ 		 	</div>
+ 		 	
+ 			
+ 		 	<? endforeach; ?>
+ 		 	<!-- </div> -->
+			</div>
+			
+ 		 	
+ 		 	
+ 		 
 
  <?php if ( have_posts() ) : ?>
 
-			<header class="page-header textCenter margin">
+			<header class="page-header textCenter marginBottom ">
 				<?php
 					$taxonomies = get_queried_object();
 				
 					// print_r($taxonomies);
 					// usort($taxonomies);
 				?>
-					<h1 class="caps"><?php echo $taxonomies->name?></h1>
- 		 			<p><?php echo $taxonomies->description?></p>
+					<h1 class="caps marginBottom"><?php echo $taxonomies->name?></h1>
+ 		 			
 
  		 	<?php  $countingPosts = get_queried_object()->count;
 			 if ( $countingPosts > 1) {  ?>
  		 	<form method="post" id="geocoding_form" class="textCenter" >
 		          <div class="col-sm-12 textCenter ">
 		            <input type="text" id="addressInput" name="address" placeholder="Address or Postal Code">
-		            <input type="submit" class="btn " id="geocoding_form_btn" value="Search">
+		            <input type="submit" class="btn btnSearch" id="geocoding_form_btn" value="Search">
 		          </div>
         	</form>
         <?php  }?>  <!-- search bar -->
@@ -47,17 +58,20 @@
 			<?php endif; ?>		
 
 
-            <div class="row marginBottom ">
-            <div class="col-md-5 AddressScroll margin scrolling">
+            <div class="row marginBottom"  >
+            <div class="col-md-5 AddressScroll margin customScroll"  >
+             <?php if ( $countingPosts > 1) {  ?>	
+            <p class="grey"> Sorted - Alphabetical</p>
+            <?php  }?> 
             <?php   $markers_array = array(); ?>
   				<?php  while ( have_posts() ) : the_post(); ?>
  					
- 				<article id="post-<?php the_ID(); ?>" class=""  <?php post_class(); ?>>
+ 				<article id="post-<?php the_ID(); ?>"   <?php post_class(); ?>>
 					<header class="markerdata">
 					<?php if(get_field("website_address") == null) { ?> 
 						<p class="bold"><?php echo the_title()?></p>
 					<?php } else { ?>
-						<a href="https://<?php echo get_field("website_address")?>" class="">
+						<a class="whiteColorTo bold" href="https://<?php echo get_field("website_address")?>" class="">
 						<?php echo the_title()?>
 						</a>
 					<?php } ?>
@@ -83,7 +97,7 @@
 			</div> <!-- list of addresses -->
 
 
-			<div id="googleMaps"  class="col-md-5 GoogleMargin ">
+			<div id="googleMaps"  class="col-sm-11 col-md-5 GoogleMargin ">
 				<?php
 						$queried_object = get_queried_object();
 						$taxonomy = $queried_object->taxonomy;
@@ -91,6 +105,8 @@
 
 						$longitude = get_field( 'longitude', $taxonomy.'_'.$term_id);
 						$latitude = get_field( 'latitude', $taxonomy.'_'.$term_id);
+						$zoom = get_field('zoom',$taxonomy.'_'.$term_id);
+
 						if( $longitude ) {
 						} else {
 						    echo 'empty';
@@ -99,6 +115,7 @@
 								$translation_array = array(
 					'Mainlongitude' => $longitude,
 					'Mainlatittude' => $latitude,
+					'Mainzoom' => $zoom,
 				);
 								
 				wp_localize_script( 'gmapsfunctions/js', 'venue', $translation_array );
@@ -106,6 +123,7 @@
 				 ?>
 
 			</div> <!-- google maps -->
+
 		
 
 	</div>
