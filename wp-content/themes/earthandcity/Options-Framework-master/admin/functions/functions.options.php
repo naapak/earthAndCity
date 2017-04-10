@@ -103,6 +103,7 @@ if (!function_exists('of_options'))
 global $of_options;
 $of_options = array();
 
+
 $of_options[] = array( 	"name" 		=> "Archive Settings",
 						"type" 		=> "heading"
 				);
@@ -146,28 +147,24 @@ $of_options[] = array( 	"name" 		=> "FAQ Page Title",
 				);
 
 
+//-------------------------------------STEPHS STUFF ^^^^ --------------------------------------------------
 
-//---------------------- END OF ARCHIVE (CATERING/FAQ) SETTINGS ----------------------
+
 
 
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);
 					
-$url =  ADMIN_DIR . 'assets/images/';
-$of_options[] = array( 	"name" 		=> "Main Layout",
-						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
-						"id" 		=> "layout",
-						"std" 		=> "2c-l-fixed.css",
-						"type" 		=> "images",
-						"options" 	=> array(
-							'1col-fixed.css' 	=> $url . '1col.png',
-							'2c-r-fixed.css' 	=> $url . '2cr.png',
-							'2c-l-fixed.css' 	=> $url . '2cl.png',
-							'3c-fixed.css' 		=> $url . '3cm.png',
-							'3c-r-fixed.css' 	=> $url . '3cr.png'
-						)
-				);		
+
+$of_options[] = array( 	"name" 		=> "Logo",
+						"desc" 		=> "Upload the logo for the site.",
+						"id" 		=> "logo",
+						"std" 		=> "",
+						"type" 		=> "upload",
+						
+				);
+				
 $of_options[] = array( 	"name" 		=> "Tracking Code",
 						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
 						"id" 		=> "google_analytics",
@@ -443,7 +440,7 @@ $of_options[] = array( 	"name" 		=> "Hello there!",
 										"std" 		=> "#2098a8",
 										"type" 		=> "color"
 								);
-		
+				
 // Backup Options
 $of_options[] = array( 	"name" 		=> "Backup Options",
 						"type" 		=> "heading",

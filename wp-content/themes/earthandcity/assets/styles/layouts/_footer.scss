@@ -7,7 +7,10 @@
 	min-width:100%;
 	padding:2rem;
 	.footer_sign_up {
-
+		flex-basis: 100%; //new
+	}
+	.footer-flex {
+		flex-wrap:wrap;
 	}
 }
 
@@ -36,6 +39,28 @@
 	}
 }
 
+
+////
+.mc-field-group{
+    float: left;
+    width: 80%;
+}
+
+#mce-EMAIL{
+	width: 100%;
+}
+
+.clear{
+	float: left;
+    width: 20%;
+}
+
+#mc-embedded-subscribe{
+	width: 100%;
+}
+
+///
+
 .copyrightLine{
 	display:flex;
 	justify-content:flex-end;
@@ -43,10 +68,26 @@
 	white-space:nowrap;
 }
 
+.mobileFooterNav{
+	display:flex;
+	justify-content:center;
+}
+
+.test-footer-mobile{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+
 
 
 /***** MailChimp plugin styling *****/
 
+
+
+.test-footer-mobile {
+	justify-content: space-between;
+}
 
 .mc_email_format,#mc_display_rewards,.mc_email_format,.field-group{
 	display:none !important;
@@ -94,11 +135,54 @@
 	border:1px solid white;
 }
 
+.footer_sign_up {
+	flex-basis: 100%;
+}
+
+#mc_embed_signup_scroll input.mc-field-group {
+	float: left;
+	width: 80%;
+}
+
+.required.email {
+	width: 100%;
+}
+
+.clear {
+	float: left;
+	width: 20%;
+}
+
+input.button.signUpButton {
+	width: 100%;
+}
+
+
+
 
 
 /********** desktop styling **********/
 
 @media only screen and (min-width: 768px){
+	
+	.footerBackground{
+		.flex {
+			flex-wrap:wrap;
+		}
+		.footer_sign_up {
+			flex-basis: 25%; //new
+		}
+	}
+
+
+/***** instagram plugin styling *****/
+.clearIt{
+	clear:left;
+	margin:0 auto;
+	display:block;
+}
+
+
 
 }
 

@@ -1,5 +1,3 @@
-<!-- <h1>this is archive.php</h1> -->
-
 <?php get_template_part("templates/content","header"); ?>
 
 <div class="wrap">

@@ -30,7 +30,7 @@ class banner {
   }
 
   public function get_title() {
-    if (is_tax('locations')) {
+    if (is_tax('venue')) {
       $taxonomies = get_queried_object();
       $this->title = $taxonomies->name;
     }elseif( is_archive()) {

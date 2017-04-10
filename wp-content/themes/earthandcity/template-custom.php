@@ -1,5 +1,3 @@
-<h1>I am in the about us template-custom.php</h1>
-
 <?php
 /**
  * Template Name: About Us

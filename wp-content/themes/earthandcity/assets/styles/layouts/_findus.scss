@@ -9,6 +9,8 @@
 .marginLeft {margin-left:5% !important;}
 .marginBottom {margin-bottom: 5vh !important;}
 .marginTop {margin-top: 5vh !important;}
+.white {color:white;}
+.flexContent {display:flex;}
 
 // specific
 /* ACF maps */
@@ -90,6 +92,7 @@
 #googleMaps { max-height: 30vh!important;}
 .AddressScroll { 
     max-height: 30vh;
+    overflow:hidden;
     }
 
 .margin {margin-right:2% !important; margin-left:10% !important;}
@@ -113,20 +116,88 @@
 
 
 // front page //
+.emailBackground {
+background-color: black;
+h5{ 
+    padding-top:10px;
+}
+
+}
+
+.emailAddressInput { 
+    min-width:40%; 
+    border: 1px solid #333;
+    padding-right: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.emailJoinbtn {
+    background-color: #333; 
+    font-size: 15px;    
+    border-radius: 0;
+    color: white; 
+
+}
+
+.shopCategories {
+  width: 33%;
+  margin-top: 1rem; 
+  margin-bottom: 1rem;
+    img { width:75%;
+            height: 20vh;
+
+        }
+    h2 {
+        color:black;
+        text-decoration: none !important;
+    }
+}
+
+
+
+
+.homeButtons {
+        display: flex;
+        justify-content: center;
+        // padding-bottom:3rem;
+        
+        .homeButton {
+            padding: 0.5rem 0.5rem;
+            margin:.5rem;
+            font-size:1.6rem;
+            background:#333;
+            a {
+                color:white;
+                text-decoration: none;
+            }
+        }
+    }
+@media only screen and (max-width: 600px){
+.emailBackground {
+    h5 { font-size: 15px;
+    
+        }
+    }
+
+.shopCategories {
+     h2 { font-size: 15px;
+        }
+    
+    }
+
+
+}
+
+@media (min-width: 600px) {
 
 .shopCategories {
   width: 75%;
-  // border: 1px solid grey; border-top: 6px solid grey; 
   margin-top: 2rem; 
   margin-bottom: 5rem;
-  // margin-right: 2%;
-  // margin-left:2%;
+ 
 }
 
-.emailBackground {
-background-color: grey;
 
-}
 .paddingTopBottom {padding-bottom: 5vh !important; padding-top: 5vh !important;}
 
 
@@ -141,12 +212,10 @@ background-color: grey;
   color: black;
   text-decoration: none;
 
-
 }
 
-
 .emailAddressInput { min-width:40%; 
-    border: 1px solid black;
+    border: 1px solid #333;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -154,7 +223,7 @@ background-color: grey;
     font-size: 20px;
 }
 .emailJoinbtn {
-    background-color: black; 
+    background-color: #333; 
     font-size: 30px;    
     padding-bottom: 7px;
     padding-top: 7px;
@@ -162,7 +231,12 @@ background-color: grey;
     padding-right: 50px;
     border-radius: 0;
     color: white; 
+
 }
+
+.emailJoinbtn:hover {
+        cursor: pointer;
+    }
 
 .homeButtons {
         display: flex;
@@ -179,4 +253,4 @@ background-color: grey;
             }
         }
     }
-
+}

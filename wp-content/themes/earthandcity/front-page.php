@@ -3,24 +3,22 @@
 
 <!-- email -->
 
-		
+	
 
+<div  class="paddingTopBottom emailBackground">
 
-
-<div  id="mc_embed_signup" class="paddingTopBottom emailBackground">
-
-	<h5 class="textCenter" >Sign-up for exclusive offers! </h5>
+	<h5 class="textCenter white" >Sign-up for exclusive offers! </h5>
 
 				<form action="//earthandcity.us9.list-manage.com/subscribe/post?u=0d5ee7dafe74014c19b7248e3&amp;id=9df49b8429" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll" class="col-sm-12 textCenter ">
-						<div class="mc-field-group">
-		<input type="email" value="" name="EMAIL" id="mce-EMAIL" class="emailAddressInput" placeholder="Enter your email address">
+						<div >
+				<input type="email" value="" name="EMAIL" class="emailAddressInput" placeholder="Enter your email address">
 						
 						
-						<input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="btn emailJoinbtn">
+						<input type="submit" value="Join" name="subscribe" class="btn emailJoinbtn">
 						</div>
-					<div class="mc-field-group input-group"></div>
-					<div id="mce-responses" class="clear">
+					<div class=" input-group"></div>
+					<div class="clear">
 						<div class="response" id="mce-error-response" style="display:none"></div>
 						<div class="response" id="mce-success-response" style="display:none"></div>
 					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -35,20 +33,20 @@
 
 <!-- impact -->
 
-       <h1 class="textCenter black categories marginTop "> Let's make an impact, together  </h1>
+       <h1 class="textCenter black categories marginTop  "> Let's make an impact, together  </h1>
        <?php   $terms = get_terms(array("impact"));
 
         ?>
  			
- 		 	<div class="flex textCenter marginTop">
+ 		 	<div class="flexContent textCenter marginTop">
  		 		<?foreach ($terms as $term) : ?>
 
- 		 		
- 		 		<div class="shopCategories">
+ <!-- style="background: url('<?php the_field('image10', $term) ?>');" -->
+ 		 		<div class="shopCategories" >
  		 			<a href="<?php echo get_term_link($term); ?>">
 
- 		 			<img src="<?php the_field('image10', $term) ?>">
- 		 			<h2 class="home2Button"><?php echo $term->name;
+  		 			<img src="<?php the_field('image10', $term) ?>">
+  		 			<h2 class="home2Button"><?php echo $term->name;
 
  		 			echo $term->image;?></h2>
 
@@ -65,7 +63,7 @@
   <div class="carousel-inner" role="listbox">
   <?php while (have_posts()) : the_post() ;     ?>
     <div class="carousel-item active">
-      <img class="d-block img-fluid" src="..." alt="Second slide">
+      <!-- <img class="d-block img-fluid" src="..." alt="Second slide"> -->
     </div>
    <?php endwhile; ?> 
   </div>
@@ -94,7 +92,7 @@
 </div>
 <!-- intagram -->
 
-<h6 class="textCenter black categories "> Connect with us on instagram   </h6>
+<h6 class="textCenter black categories marginTop marginBottom "> Connect with us on instagram   </h6>
 
 
 
