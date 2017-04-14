@@ -24,8 +24,11 @@
 	margin: 1em auto;
 	padding: 1em;
 	border: none;
-	display: block;
+	text-align:center;
 	margin: 0 auto;
+}
+.contact-button:hover {
+	cursor: pointer !important;
 }
 
 .catering-text {

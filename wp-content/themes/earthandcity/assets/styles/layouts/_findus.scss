@@ -7,10 +7,14 @@
 .margin {margin-right:5% !important; margin-left:5% !important;}
 .marginRight {margin-right:5% !important;}
 .marginLeft {margin-left:5% !important;}
-.marginBottom {margin-bottom: 5vh !important;}
-.marginTop {margin-top: 5vh !important;}
+.marginBottom {margin-bottom: 2vh !important;}
+.marginTop {margin-top: 2vh !important;}
 .white {color:white;}
 .flexContent {display:flex;}
+.instagram {text-decoration:none; color:black;}
+.carousel-control-next-icon {margin-left:2px;}
+
+.alighRight {text-align: right !important;}
 
 // specific
 /* ACF maps */
@@ -25,7 +29,18 @@
 }
 .flexButton {display: inline-flex; flex-wrap: wrap; width:90%; }
 .flexonBig {display:flex;}
-.linkButton {
+.wpcf7-submit {
+    background-color: #333; 
+    font-size: 15px;    
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0;
+    color: white; 
+
+}
+.linkButton,  {
     margin-bottom: 10px; 
     background-color: black;     
     padding-bottom: 5px;
@@ -82,8 +97,43 @@
 
 .GoogleMargin{margin-right:5% !important;}
 
+
+
+
+
+@media only screen and (max-width: 600px){
+.font-xl {
+    font-size: large !important;
+}
+.carousel-item {flex-direction: column !important;}
+
+.favouritesImage { width: 80vh; height:40vh;  margin-left: 10px;}
+.favouritesText {  height: 20vh; text-align: center; padding-left: 10px; padding-right:10px;
+}
+
+.favouritesText { 
+    h1 {
+    font-size: 20px;
+}
+}
+
+.emailBackground {
+    h5 { font-size: 15px;
+    
+        }
+    }
+
+.shopCategories {
+     h2 { font-size: 15px;
+        }
+    
+    }
+
+}
+
 @media (min-width: 600px) {
-.marginBottom {margin-bottom: 10vh !important;}
+// .marginBottom {margin-bottom: 5vh !important;}
+.carousel-item {justify-content:center !important;}
 
 .linkButton {
     font-size: 12px;
@@ -97,98 +147,14 @@
 
 .margin {margin-right:2% !important; margin-left:10% !important;}
 .GoogleMargin{margin-right:0% !important;}
-    }
 
-@media (min-width: 900px) {
-.marginBottom {margin-bottom: 12vh !important;}
-.linkButton {
-    font-size: 16px;
+.favouritesImage { width: 40%; height:20vh;  }
+.favouritesText { width: 40%;   padding-left: 10px; }
+.favouritesText { 
+    h1 {
+    font-size: 20px;
 }
-
-#googleMaps { max-height: 50vh!important;}
-.AddressScroll { 
-    max-height: 50vh;
-    }
-.margin {margin-right:2% !important; margin-left:10% !important;}
-.GoogleMargin{margin-right:0% !important;}
-    }
-
-
-
-// front page //
-.emailBackground {
-background-color: black;
-h5{ 
-    padding-top:10px;
 }
-
-}
-
-.emailAddressInput { 
-    min-width:40%; 
-    border: 1px solid #333;
-    padding-right: 5px;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.emailJoinbtn {
-    background-color: #333; 
-    font-size: 15px;    
-    border-radius: 0;
-    color: white; 
-
-}
-
-.shopCategories {
-  width: 33%;
-  margin-top: 1rem; 
-  margin-bottom: 1rem;
-    img { width:75%;
-            height: 20vh;
-
-        }
-    h2 {
-        color:black;
-        text-decoration: none !important;
-    }
-}
-
-
-
-
-.homeButtons {
-        display: flex;
-        justify-content: center;
-        // padding-bottom:3rem;
-        
-        .homeButton {
-            padding: 0.5rem 0.5rem;
-            margin:.5rem;
-            font-size:1.6rem;
-            background:#333;
-            a {
-                color:white;
-                text-decoration: none;
-            }
-        }
-    }
-@media only screen and (max-width: 600px){
-.emailBackground {
-    h5 { font-size: 15px;
-    
-        }
-    }
-
-.shopCategories {
-     h2 { font-size: 15px;
-        }
-    
-    }
-
-
-}
-
-@media (min-width: 600px) {
 
 .shopCategories {
   width: 75%;
@@ -222,7 +188,7 @@ h5{
     padding-right: 5px;
     font-size: 20px;
 }
-.emailJoinbtn {
+.emailJoinbtn, .wpcf7-submit {
     background-color: #333; 
     font-size: 30px;    
     padding-bottom: 7px;
@@ -234,7 +200,7 @@ h5{
 
 }
 
-.emailJoinbtn:hover {
+.emailJoinbtn:hover, .wpcf7-submit:hover {
         cursor: pointer;
     }
 
@@ -254,3 +220,92 @@ h5{
         }
     }
 }
+
+@media (min-width: 900px) {
+
+.favouritesImage { width: 50vh; height:30vh;  }
+.favouritesText { width: 30%;   padding-left: 20px; }
+// #carouselExampleControls {margin-bottom: 5vh !important;}
+.favouritesText { 
+    h1 {
+    font-size: 1.5rem;
+}
+}
+
+.marginBottom {margin-bottom: 5vh !important;}
+.linkButton {
+    font-size: 16px;
+}
+
+#googleMaps { max-height: 50vh!important;}
+.AddressScroll { 
+    max-height: 50vh;
+    }
+.margin {margin-right:2% !important; margin-left:10% !important;}
+.GoogleMargin{margin-right:0% !important;}
+    }
+
+
+
+// front page //
+.emailBackground {
+background-color: black;
+h5{ 
+    padding-top:10px;
+}
+
+}
+
+.emailAddressInput { 
+    min-width:40%; 
+    border: 1px solid #333;
+    padding-right: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.emailJoinbtn {
+    background-color: #333; 
+        
+    border-radius: 0;
+    color: white; 
+
+}
+
+.shopCategories {
+  width: 33%;
+  margin-top: 1rem; 
+  margin-bottom: 1rem;
+    img { width:75%;
+            height: 20vh;
+
+        }
+    h2 {
+        color:black;
+        text-decoration: none !important;
+    }
+}
+
+.homeButtons {
+        display: flex;
+        justify-content: center;
+        // padding-bottom:3rem;
+        
+        .homeButton {
+            padding: 0.5rem 0.5rem;
+            margin:.5rem;
+            font-size:1.6rem;
+            background:#333;
+            a {
+                color:white;
+                text-decoration: none;
+            }
+        }
+    }
+@media (min-width: 1200px) {
+.favouritesImage { width: 60vh;}
+
+
+}
+
+
+

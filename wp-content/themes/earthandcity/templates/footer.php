@@ -1,7 +1,7 @@
 <footer class="content-info">
 
 <div class="footerBackground">
-	<div class="clearIt"><?php echo do_shortcode("[instagram-feed]"); ?></div>
+	<!-- <div class="clearIt"><?php echo do_shortcode("[instagram-feed]"); ?></div> -->
 	<div class="flex footer-flex">
 		<div class="footer_sign_up">
 			<?php //mailchimpSF_signup_form(); ?>

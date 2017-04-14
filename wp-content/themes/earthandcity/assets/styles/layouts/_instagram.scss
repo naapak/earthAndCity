@@ -1,0 +1,43 @@
+
+$itemPadding: 5px;
+
+.InstagramBody {
+margin: 10px;
+
+}
+
+.Instagramcarousel {
+  // height: 50vh;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.slick-list {margin-right: 30px !important;
+    margin-left: 30px !important;}
+
+// .slick-prev,
+// .slick-next {
+ 
+//   background: black;
+  
+// }
+
+.slick-prev {
+  center: 12px;
+}
+
+.slick-next {
+  center: 90px;
+}
+
+.carouselItem {
+  
+  margin: $itemPadding;
+
+ 
+  img {
+    width: 98%;
+    
+  }
+  
+}

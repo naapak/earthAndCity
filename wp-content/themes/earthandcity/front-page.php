@@ -57,15 +57,35 @@
 
 <!-- fan favourites -->
 
+
+
 		<h1 class="textCenter black categories marginTop marginBottom "> Fan Favourites  </h1>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
-  <?php while (have_posts()) : the_post() ;     ?>
-    <div class="carousel-item active">
-      <!-- <img class="d-block img-fluid" src="..." alt="Second slide"> -->
+  <?php
+$query_favourites = new WP_Query(array(
+                "post_type" => "favourites",
+                ));
+            $i = 0;
+            ?>
+  <?php while ($query_favourites->have_posts()) : $query_favourites->the_post(); $i++; 
+   ?>
+   <?php if($i == 1) : ?>
+    <div class="carousel-item active" >
+    <?php else : ?>
+    <div class="carousel-item"> <?php endif ?>
+    
+	    	<div class="favouritesImage" style="background: url('<?php echo get_the_post_thumbnail_url()?>') no-repeat; background-size: contain;">
+	      	</div>
+	      <div class="favouritesText">
+	      	<h1>"<?php echo get_the_content()?>"</h1>
+	      	<p class="alighRight">-<?php echo get_field("fan_name")?></p>
+	      </div>
+	
     </div>
-   <?php endwhile; ?> 
+   <?php endwhile; 
+   wp_reset_postdata();?> 
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -79,7 +99,7 @@
 
 
 <!-- buttons -->
-<div class="homeButtons">
+<div class="homeButtons marginTop">
 <?php
 	$frontpage_id = get_post_meta($front_id, '_meta_key', true);
 	for ($i = 1; $i < 3; $i++ ) {
@@ -91,8 +111,28 @@
  ?>
 </div>
 <!-- intagram -->
+		<?php 
+		$token = get_field("token");
+		$username = get_field("username");
 
-<h6 class="textCenter black categories marginTop marginBottom "> Connect with us on instagram   </h6>
+		$instagram_array = array(
+							'token' => $token,
+							'username' => $username,
+							);
+										
+		wp_localize_script( 'instagram', 'user', $instagram_array );
+
+		?>
+<a href="https://www.instagram.com/<?php echo get_field("username")?>/" target="_blank">
+<h6 class="textCenter black categories marginTop instagram "> Connect with us on Instagram   </h6></a>
+<section class="InstagramBody" >
+
+<div class="Instagramcarousel" id="instagram-feeds"></div>
+
+<p class="text-link"></p>
+
+</section>
+
 
 
 

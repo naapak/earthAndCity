@@ -109,8 +109,12 @@ add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 // enques google maps and API key is added here:-
 
 wp_enqueue_script('gmapapi/js', 'http://maps.google.com/maps/api/js?libraries=places&key=AIzaSyCOEds4ATBaAPDSP7aLwT6Q8pNxOIsJ9fw', ['jquery'], null, true);
+
 wp_enqueue_script('gmaps/js', Assets\asset_path('../gmaps/gmaps.min.js'), ['jquery'], null, true);
 wp_enqueue_script('gmapsfunctions/js', Assets\asset_path('../gmaps/gmapsfunctions.js'), ['jquery'], null, true);
 // wp_enqueue_script('scroll', Assets\asset_path('../../../plugins/advanced-scrollbar/js/jquery.nicescroll.min.js'), ['jquery'], null, true);
 wp_enqueue_script('scrolling', Assets\asset_path('../gmaps/jquery.mCustomScrollbar.min.js'), ['jquery'], null, true);
+wp_enqueue_script('slick', Assets\asset_path('../instagram/slick.min.js'), ['jquery'], null, false);
+wp_enqueue_script('instagram', Assets\asset_path('../instagram/instagram.js'), ['jquery'], null, true);
+
 ?>

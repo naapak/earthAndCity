@@ -1,0 +1,18 @@
+
+.contentPaddingleft {margin-left: 2% !important;}
+.wpvl_auto_thumb_box {height: 20vh!important;}
+.video_lightbox_auto_anchor_image, .wpvl_auto_thumb_box {    height: 40vh !important;
+    width: 40vw !important;
+}
+.contentmarginTop {margin-top: 10vh !important;}
+
+@media only screen and (max-width: 600px){
+
+.video_lightbox_auto_anchor_image, .wpvl_auto_thumb_box {    height: 250px !important;
+    width: 250px !important;
+}
+.contentmarginTop {margin-top: 3vh !important;}
+
+}
+
+

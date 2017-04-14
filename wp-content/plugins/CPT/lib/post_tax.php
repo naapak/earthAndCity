@@ -45,7 +45,7 @@ function get_post_args($category) {
 
 function create_post_types(){
 
-    $post_types = array("Ourimpact", "Catering", "FAQ", "Locations");
+    $post_types = array("Ourimpact", "Catering", "FAQ", "Locations","Favourites");
 
     foreach($post_types as $post_type) {
         $post_args = get_post_args($post_type);
@@ -106,10 +106,12 @@ function create_taxonomies($key,$value) {
 
 function create_tax() {
 
-    $tax_array  = array("ourimpact" => array("impact",),
+    $tax_array  = array(
+                        "ourimpact" => array("impact",),
                         "catering" => array("season", ),
                         "FAQ" => array("faq",),
-                        "locations"=> array("venue",));
+                        "locations"=> array("venue",),
+                        );
     foreach ($tax_array as $tax_key => $tax_value) { 
         // echo ($tax_value.$tax_key);
         foreach ($tax_value as $tax) {
@@ -121,18 +123,18 @@ function create_tax() {
         
     }
 
-add_action( 'widgets_init', 'theme_slug_widgets_init' );
-function theme_slug_widgets_init() {
-    register_sidebar( array(
-        'name' => __( 'Contact Us Sidebar', 'theme-slug' ),
-        'id' => 'contact-us',
-        'description' => __( 'This is the contact info' ),
-        'before_widget' => '<p id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</p>',
-    'before_title'  => '<h2 class="widgettitle">',
-    'after_title'   => '</h2>',
-    ) );
-}
+// add_action( 'widgets_init', 'theme_slug_widgets_init' );
+// function theme_slug_widgets_init() {
+//     register_sidebar( array(
+//     //     'name' => __( 'Instagram', 'theme-slug' ),
+//     //     'id' => 'contact-us',
+//     //     'description' => __( 'This is the contact info' ),
+//     //     'before_widget' => '<p id="%1$s" class="widget %2$s">',
+//     // 'after_widget'  => '</p>',
+//     // 'before_title'  => '<h2 class="widgettitle">',
+//     // 'after_title'   => '</h2>',
+//     // ) );
+// }
 
 
 add_action( 'pre_get_posts', 'modify_query_order_posts' );
