@@ -4,12 +4,12 @@
 	
 	padding-top:0px;
     
-	.banner-content {
+	.banner-content, .banner-content-other {
 		padding: 1rem 0 0.5 0;
 		text-align:center;
 
 		h1 {
-			padding-top:3.5rem;
+			
 			text-shadow: 0 0 8px #333;
 			font-size: 1.5rem;
 		}
@@ -31,16 +31,43 @@
     	}
 	}
 }
+@media (max-width: 600px) {
+    .banner-content {
+        
+        h1 {
+            padding-top:4rem;
 
+            
+        }
+
+    }
+    .banner-content-other {
+
+        h1  {
+            padding-top:5rem;
+             padding-bottom:3.5rem;
+        }
+    }
+
+}
 
 @media (min-width: 600px) {
+    .banner-content, .banner-content-other {
+        
+        h1 {
+            padding-top:3.5rem;
+
+            
+        }
+
+    }
 
 .banner-wrap {
-	.banner-content {
+	.banner-content, .banner-content-other {
 		padding-top:17vh;
 		h1 {
 			
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 }
 .banner-buttons {
@@ -64,9 +91,9 @@
 }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
 .banner-wrap {
-	.banner-content {
+	.banner-content, .banner-content-other {
 		padding-top:40vh;
 		h1 {
 			

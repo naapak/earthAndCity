@@ -7,16 +7,15 @@
 			<?php //mailchimpSF_signup_form(); ?>
 			
 			
-
 			<div class="mobileFooterNav hidden-md-up center">
-			  <a class="iconMargin" href="https://www.facebook.com/earthandcity/"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/facebook-logo-button.png" alt="Facebook Link" width="42" height="42" border="0"></a>
-			  <a class="iconMargin" href="https://www.instagram.com/earthandcity/?hl=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/instagram.png" alt="Instagram Link" width="42" height="42" border="0"></a>
-			  <a class="iconMargin" href="https://twitter.com/earthandcity?lang=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/twitter-logo-button.png" alt="Twitter Link" width="42" height="42" border="0"></a>
-			  <a class="iconMargin" href="mailto:info@earthandcity.ca"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/email.png" alt="Email Link" width="42" height="42" border="0"></a>
-			  <a class="iconMargin" href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/youtube-symbol.png" alt="Youtube Link" width="42" height="42" border="0"></a>
+			  <?php $frontpage_id = get_option( 'page_on_front' );?>
+        <a class="iconMargin" href="<?php echo get_field("facebook", $frontpage_id)?>"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/facebook-logo-button.png" alt="Facebook Link"></a>
+        <a class="iconMargin" href="<?php echo get_field("instagram", $frontpage_id)?>"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/instagram.png" alt="Instagram Link" ></a>
+        <a class="iconMargin" href="<?php echo get_field("twitter", $frontpage_id)?>"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/twitter-logo-button.png" alt="Twitter Link" ></a>
+        <a class="iconMargin" href="<?php echo get_field("email_address", $frontpage_id)?>"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/email.png" alt="Email Link"></a>
+        <a class="iconMargin" href="<?php echo get_field("youtube", $frontpage_id)?>"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/youtube-symbol.png" alt="Youtube Link" ></a>
 			</div>
 
-			
 
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
@@ -24,8 +23,9 @@
 				    <div id="mc_embed_signup_scroll">
 						<div class="mc-field-group">
 							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email...">
+							<input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button signUpButton">
 						</div>
-						<div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button signUpButton"></div>
+						
 					<div class="mc-field-group input-group"></div>
 					<div id="mce-responses" class="clear">
 						<div class="response" id="mce-error-response" style="display:none"></div>
@@ -38,22 +38,13 @@
 			</div>
 			<!--End mc_embed_signup-->
 		</div>
-
-		<?php dynamic_sidebar( 'footer' ); ?>
-		
-
-		<div class="flexRight hidden-sm-down">
-		  <a class="iconMargin" href="https://www.facebook.com/earthandcity/"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/facebook-logo-button.png" alt="Facebook Link" width="42" height="42" border="0"></a>
-		  <a class="iconMargin" href="https://www.instagram.com/earthandcity/?hl=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/instagram.png" alt="Instagram Link" width="42" height="42" border="0"></a>
-		  <a class="iconMargin" href="https://twitter.com/earthandcity?lang=en"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/twitter-logo-button.png" alt="Twitter Link" width="42" height="42" border="0"></a>
-		  <a class="iconMargin" href="mailto:info@earthandcity.ca"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/email.png" alt="Email Link" width="42" height="42" border="0"></a>
-		  <a class="iconMargin" href="https://www.youtube.com/channel/UCu9u-ve4f4zDlMLMxtpYqbQ"><img src="<?php echo get_bloginfo("stylesheet_directory")?>/assets/images/IconsPNG/youtube-symbol.png" alt="Youtube Link" width="42" height="42" border="0"></a>
+		<div class="footer">
+		<?php dynamic_sidebar( 'footer' ); ?> 
 		</div>
-	</div>
 
-	<div class="copyrightLine">&#169;&#160;2017 Earth + City</div>
+		
+		
 </div>
-
-<?php wp_footer(); ?>
+	<div class="copyrightLine">&#169;&#160;2017 Earth + City</div>
 
 </footer>

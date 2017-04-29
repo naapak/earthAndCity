@@ -5,7 +5,7 @@
 	background-color:#000;
 	background-size:cover;
 	min-width:100%;
-	padding:2rem;
+	padding:1rem 2rem;
 	.footer_sign_up {
 		flex-basis: 100%; //new
 	}
@@ -42,30 +42,28 @@
 
 ////
 .mc-field-group{
-    float: left;
-    width: 80%;
+   display: flex;
+
 }
 
 #mce-EMAIL{
-	width: 100%;
+	width:70%
 }
 
-.clear{
-	float: left;
-    width: 20%;
-}
 
 #mc-embedded-subscribe{
-	width: 100%;
+	width: 80px;
 }
 
 ///
 
 .copyrightLine{
-	display:flex;
-	justify-content:flex-end;
 	color:white;
-	white-space:nowrap;
+
+	display:flex;
+	justify-content:center;
+	
+	
 }
 
 .mobileFooterNav{
@@ -164,25 +162,53 @@ input.button.signUpButton {
 /********** desktop styling **********/
 
 @media only screen and (min-width: 768px){
-	
+	.copyrightLine{
+	justify-content:flex-end;
+		
+}
+	.footer {
+		display: flex;
+
+		a{
+			padding: 5%;
+		}
+	}
+	.sub-menu {
+	li {
+			text-align: initial;
+		}
+
+	}
 	.footerBackground{
 		.flex {
 			flex-wrap:wrap;
 		}
 		.footer_sign_up {
-			flex-basis: 25%; //new
+			flex-basis: 50%; 
 		}
 	}
 
 
-/***** instagram plugin styling *****/
-.clearIt{
-	clear:left;
-	margin:0 auto;
-	display:block;
+
 }
 
+@media only screen and (min-width: 1000px){
+	.footer {
+		display: flex;
 
+		a{
+			padding: 5%;
+			text-align: initial;
+		}
+	}
+	.footerBackground{
+		.flex {
+			flex-wrap:nowrap;
+		}
+		.footer_sign_up {
+			flex-basis: 25%; 
+		}
+	}
 
 }
 

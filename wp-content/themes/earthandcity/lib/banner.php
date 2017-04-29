@@ -16,12 +16,13 @@ class banner {
   }
 
   public function banner_start() {
+    if (is_front_page()){ $bannerContent = "banner-content";} else { $bannerContent = "banner-content-other";}
     $return .= '
     <style>
     	.banner-wrap {background: no-repeat url("'.$this->image.'") center center  / 100% }
 	  </style>
     <div class="banner-wrap">
-      <div class="banner-content">
+      <div class="'.$bannerContent.'">
         '.self::get_title().'
       </div>
       <div class="banner-buttons">'.self::get_buttons().'</div>

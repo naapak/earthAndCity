@@ -41,7 +41,6 @@
  		 	<div class="flexContent textCenter marginTop">
  		 		<?foreach ($terms as $term) : ?>
 
- <!-- style="background: url('<?php the_field('image10', $term) ?>');" -->
  		 		<div class="shopCategories" >
  		 			<a href="<?php echo get_term_link($term); ?>">
 
